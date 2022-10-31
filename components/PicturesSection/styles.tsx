@@ -12,7 +12,7 @@ export const Container = styled.section`
     margin-bottom: 10vh;
 	position: relative;
 	@media (max-width: 767px) {
-		height: auto;
+		height: 1500px;
 		align-items: center;
         flex-direction: column;
 	}
@@ -22,7 +22,7 @@ export const ComponentBackground = styled(Image)`
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 `;
 
