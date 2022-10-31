@@ -5,6 +5,7 @@ import { Menu } from '../components/Menu/Menu';
 import { BeneficiosSection } from '../components/BeneficiosSection/BeneficiosSection';
 import { LocaliazcaoSection } from '../components/LocaliazcaoSection/LocaliazcaoSection';
 
+
 export default function Home() {
 	return (
 		<div>
