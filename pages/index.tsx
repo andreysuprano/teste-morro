@@ -4,7 +4,7 @@ import { PerfilSection } from '../components/PerfilSection/PerfilSection';
 import { Menu } from '../components/Menu/Menu';
 import { BeneficiosSection } from '../components/BeneficiosSection/BeneficiosSection';
 import { LocaliazcaoSection } from '../components/LocaliazcaoSection/LocaliazcaoSection';
-
+import { PicturesSection } from '../components/PicturesSection/PicturesSection';
 
 export default function Home() {
 	return (
@@ -12,6 +12,7 @@ export default function Home() {
 			<Menu />
 			<HeaderHome />
 			<DescricaoSection />
+			<PicturesSection />
 			<PerfilSection />
 			<BeneficiosSection />
 			<LocaliazcaoSection />
