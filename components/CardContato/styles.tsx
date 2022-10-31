@@ -31,4 +31,5 @@ export const Button = styled.button`
 	border-radius: 26px;
 	color: ${(props) => props.theme.white};
 	font-size: 20px;
+	cursor: pointer;
 `;
