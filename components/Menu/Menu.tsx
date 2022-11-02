@@ -38,23 +38,15 @@ export const Menu = () => {
             </S.WrapFirst>
             <S.Logo src={Logo} alt="" />
             <S.WrapMenuLinks>
-            <ul>
-                <li>HOME</li>
-                <li>SOBRE O MORRO DOS ANJOS
-                     <ul>
-                        <li style={{marginLeft:'2vw', opacity:'0.5'}}>ESTRUTURA E LAZER</li>
-                        <li style={{marginLeft:'2vw', opacity:'0.5'}}>ACOMODACOES</li>
-                     </ul>
-                </li>
-                <li>ENCONTRE O SEU PERFIL
-                     <ul>
-                        <li style={{marginLeft:'2vw', opacity:'0.5'}}>CURTIR COM A FAMILIA</li>
-                        <li style={{marginLeft:'2vw', opacity:'0.5'}}>INVESTIR</li>
-                        <li style={{marginLeft:'2vw', opacity:'0.5'}}>PRATICAR A FE</li>
-                     </ul>
-                </li>
-                <li>CONTATO</li>
-            </ul>
+              <S.PrincipalNav>• HOME</S.PrincipalNav>
+              <S.PrincipalNavNone>• SOBRE O MORRO DOS ANJOS</S.PrincipalNavNone>
+                <S.SublNav>• ESTRUTURA E LAZER</S.SublNav>
+                <S.SublNav>• ACOMODACOES</S.SublNav>
+              <S.PrincipalNavNone>• ENCONTRE O SEU PERFIL</S.PrincipalNavNone>
+                <S.SublNav>• CURTIR COM A FAMILIA</S.SublNav>
+                <S.SublNav>• INVESTIR</S.SublNav>
+                <S.SublNav>• PRATICAR A FE</S.SublNav>
+              <S.PrincipalNav>• CONTATO</S.PrincipalNav>
             </S.WrapMenuLinks>
             <S.WrapMidiaIcons>
                 <S.Icon src={Whats} alt="" />
