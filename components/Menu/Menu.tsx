@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import * as S from './styles';
+import Link from 'next/link';
 
 import Logo from '../../assets/img/LOGOBRANCA.png';
 
@@ -39,7 +40,7 @@ export const Menu = () => {
             </S.WrapFirst>
             <S.Logo src={Logo} alt="" />
             <S.WrapMenuLinks>
-              <S.PrincipalNav>• HOME</S.PrincipalNav>
+              <S.PrincipalNav><Link href="/" style={{textDecoration: "none", color:"inherit"}}>• HOME</Link></S.PrincipalNav>
               <S.PrincipalNavNone>• SOBRE O MORRO DOS ANJOS</S.PrincipalNavNone>
                 <S.SublNav>• ESTRUTURA E LAZER</S.SublNav>
                 <S.SublNav>• ACOMODACOES</S.SublNav>
@@ -47,7 +48,7 @@ export const Menu = () => {
                 <S.SublNav>• CURTIR COM A FAMILIA</S.SublNav>
                 <S.SublNav>• INVESTIR</S.SublNav>
                 <S.SublNav>• PRATICAR A FE</S.SublNav>
-              <S.PrincipalNav>• CONTATO</S.PrincipalNav>
+              <S.PrincipalNav><Link href="/contact" style={{textDecoration: "none", color:"inherit"}}>• CONTATO</Link></S.PrincipalNav>
             </S.WrapMenuLinks>
             <S.WrapMidiaIcons>
                 <S.Icon src={Whats} alt="" />
