@@ -26,6 +26,7 @@ export const BeneficiosContainer = styled.div`
     margin-right: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 `;
 
 export const BeneficioWrapper = styled.div`
@@ -42,6 +43,4 @@ export const Paragraph = styled.p`
     font-color: ${props => props.theme.secondary};
     margin-top: 20px;
     text-align: center;
-
-
 `;

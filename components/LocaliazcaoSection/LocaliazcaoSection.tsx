@@ -1,13 +1,32 @@
 import * as S from './styles';
+import { Title } from '../DescricaoSection/styles';
 
 export const LocaliazcaoSection = () => {
 	return (
 		<S.Container>
 			<S.Wrapper>
-				<S.Mapa>
-					<h1>njiknjkjbn</h1>
-				</S.Mapa>
+				<Title style={{ color: '#fff', fontSize: 42 }}>NOSSA LOCALIZAÇÃO</Title>
+				<S.Localizacoes>
+					<S.Localizacao>
+						<S.Title>DISTÂNCIA ATÉ</S.Title>
+						<S.City>LONDRINA</S.City>
+						<S.Km>97km</S.Km>
+					</S.Localizacao>
+					<S.Divider />
+					<S.Localizacao>
+						<S.Title>DISTÂNCIA ATÉ</S.Title>
+						<S.City>CURITIBA</S.City>
+						<S.Km>420km</S.Km>
+					</S.Localizacao>
+					<S.Divider />
+					<S.Localizacao>
+						<S.Title>DISTÂNCIA ATÉ</S.Title>
+						<S.City>SÃO PAULO</S.City>
+						<S.Km>442km</S.Km>
+					</S.Localizacao>
+				</S.Localizacoes>
 			</S.Wrapper>
+			<S.Mapa />
 		</S.Container>
 	);
 };

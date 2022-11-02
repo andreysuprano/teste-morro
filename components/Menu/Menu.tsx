@@ -8,6 +8,7 @@ import Youtube from '../../assets/img/icone_youtube.png';
 import Twi from '../../assets/img/icone_twitter.png';
 import Face from '../../assets/img/icone_facebook.png';
 import Whats from '../../assets/img/icone whatsapp.png';
+import CloseButton from '../../assets/svg/CloseButton.svg';
 
 export const Menu = () => {
 
@@ -33,7 +34,7 @@ export const Menu = () => {
             <S.WrapFirst onClick={() => setIsOpen(prev => !prev)}>
             <S.MenuLabel>MENU</S.MenuLabel>
             <S.WrapLines>
-                    <h1 style={{color: "white"}}>X</h1>
+                <S.Icon src={CloseButton} alt="" style={{width:20}}/>
                 </S.WrapLines>
             </S.WrapFirst>
             <S.Logo src={Logo} alt="" />
