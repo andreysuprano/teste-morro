@@ -8,16 +8,17 @@ interface IMenu {
 export const Container = styled.section<IMenu>`
     position: fixed;
     top: 0;
-	width: 100%;
+	width: 100vw;
 	height: ${({isOpen}) => isOpen === true ? "100vh" : "0vh" };
 	background: ${(isOpen) => isOpen ? "RGBA(23,25,70,0.95)" : "transparent" };
     transition: all 200ms linear;
+    z-index: 999;
 `;
 
 export const LineUp = styled.hr`
     position: fixed;
     top: 0;
-	width: 100%;
+	width: 100vw;
 	height: 0.6vh;
     background-color: ${(props) => props.theme.secondary};
     border: none;
@@ -68,14 +69,56 @@ export const WrapMenuLinks = styled.div`
     justify-content: center;
     color:  ${(props) => props.theme.primary};
     font-size: 2rem;
-    line-height: 50px;
-    width: 30%;
+    line-height: 60px;
+    width: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 55%;
-    left: 50%;
+    left: 60%;
+    @media (max-width: 1200px) {
+        width: 70%;
+        font-size: 1.7rem;
+
+	}
+    @media (max-width: 767px) {
+        width: 90%;
+        font-size: 1.2rem;
+        padding-left: 12vw;
+        padding-right: 2vw;
+	}
+    @media (max-width: 500px) {
+        width: 90%;
+        font-size: 1.2rem;
+        padding-left: 0;
+        padding-right: 10vw;
+	}
+`;
+
+export const PrincipalNav = styled.p`
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
     :hover{
         cursor: pointer;
+        opacity: 1;
+    }
+`;
+
+export const PrincipalNavNone = styled.p`
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+`;
+
+
+export const SublNav = styled.p`
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    padding-left: 100px;
+    :hover{
+        cursor: pointer;
+        opacity: 1;
     }
 `;
 
@@ -101,6 +144,16 @@ export const WrapMidiaIcons = styled.div`
     top: 90%;
     left: 50%;
     gap: 2vw;
+    @media (max-width: 1200px) {
+        gap: 4vw;
+	}
+    @media (max-width: 767px) {
+        left: 48%;
+        gap: 8vw;
+	}
+    @media (max-width: 500px) {
+        gap: 10vw;
+	}
 `;
 
 
@@ -109,7 +162,15 @@ export const Icon = styled(Image)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0.5;
+    transform: scale(1.1);
+    transition: all 200ms linear;
     :hover{
         cursor: pointer;
+        opacity: 1;
+        transition: all 200ms linear;
+        transform: translateY(-5px) scale(1.1);
     }
 `;
+
+
