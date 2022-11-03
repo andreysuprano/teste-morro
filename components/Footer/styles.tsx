@@ -5,11 +5,14 @@ interface IImage{
 }
 
 export const Container = styled.div<IImage>`
-   background-image: url(${props => props.imageBackground});
-   background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(${props => props.imageBackground});
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 160vh;
+    min-height: 160vh;
     `;
 
 export const FooterContent = styled.footer`
