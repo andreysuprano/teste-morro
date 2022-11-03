@@ -1,11 +1,13 @@
 import * as S from './styles';
 import { Title } from '../DescricaoSection/styles';
+import { Button } from '../CardContato/styles';
 
 export const LocaliazcaoSection = () => {
 	return (
 		<S.Container>
 			<S.Wrapper>
 				<Title style={{ color: '#fff', fontSize: 42 }}>NOSSA LOCALIZAÇÃO</Title>
+
 				<S.Localizacoes>
 					<S.Localizacao>
 						<S.Title>DISTÂNCIA ATÉ</S.Title>
@@ -25,6 +27,7 @@ export const LocaliazcaoSection = () => {
 						<S.Km>442km</S.Km>
 					</S.Localizacao>
 				</S.Localizacoes>
+				<Button style={{ position: 'absolute', top: 785 }}>QUERO FALAR COM UM CONSULTOR</Button>
 			</S.Wrapper>
 			<S.Mapa />
 		</S.Container>

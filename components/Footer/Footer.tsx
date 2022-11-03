@@ -1,20 +1,19 @@
-import { SERVER_PROPS_ID } from 'next/dist/shared/lib/constants';
 import * as S from './styles';
 
-interface footerProps{
-    imageBackground: string;
-    footerComp: React.ReactElement;
+interface footerProps {
+	imageBackground: string;
+	footerComponent: React.ReactElement;
 }
 
-export const Footer = ({imageBackground, footerComp}:footerProps) => {
+export const Footer = ({ imageBackground, footerComponent }: footerProps) => {
 	return (
-		
-			<S.Container imageBackground={imageBackground}>
-                 {footerComp}
-                    <S.FooterContent>
-                            <h1>footer content</h1>
-                    </S.FooterContent>
-			</S.Container>
-		
+		<S.Container imageBackground={imageBackground}>
+			<S.Wrapper>
+				{footerComponent}
+				<S.Footer>
+					<h1>footer content</h1>
+				</S.Footer>
+			</S.Wrapper>
+		</S.Container>
 	);
 };

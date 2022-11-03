@@ -43,6 +43,12 @@ export const Localizacoes = styled.div`
     flex-direction: row;
 `;
 
+// export const LocalizacoesWrapper = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: -35px;
+// `;
+
 export const Localizacao = styled.div`
     display: flex;
     justify-content: center;
