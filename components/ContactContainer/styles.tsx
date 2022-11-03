@@ -7,6 +7,7 @@ export const Container = styled.div`
     height:120vh;
     position: relative;
     z-index: 500;
+  margin-bottom: 52px;
 `;
 
 export const AbsoluteGradient = styled.div`
@@ -15,6 +16,9 @@ export const AbsoluteGradient = styled.div`
 	width: 100vw;
     height:120vh;
     background: linear-gradient(0deg, rgba(0,0,0,0.7539390756302521) 0%, rgba(0,0,0,0.5382528011204482) 30%, rgba(255,255,255,0.8491771708683473) 65%, rgba(80,80,80,0.7595413165266106) 97%);
+    @media (max-width: 900px) {
+        height:123.42vh;
+    }
 `;
 
 export const Logo = styled(Image)`
@@ -48,9 +52,10 @@ export const WrapForm = styled.form`
     align-items: center;
     padding-bottom: 30px;
     @media (max-width: 600px) {
-        top: 55%;
+        top: 60%;
         width: 85vw;
-        height: 700px; 
+        height: 900px; 
+        padding-bottom: 0px;
     }
 `;
 
@@ -99,10 +104,49 @@ export const WrapInputs = styled.div`
 
 export const WrapChecks = styled.div`
     width: 50%;
-    height: 30vh;
-    margin-bottom: 2vh;
-    background-color: red;
+    min-height:80px ;
+    background-color: transparent;
+    margin-bottom: 1vh;
+    text-align: center;
     @media (max-width: 767px) {
         width: 80%;
     }
+`;
+
+
+export const CheckLabel = styled.div`
+    font-size: 1rem;
+    color: #171946;
+    margin-bottom: 2vh;
+
+`;
+
+export const LineBetween = styled.hr`
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #171946;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+`;
+
+
+export const WrapInputsChoice = styled.div`
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ flex-direction: row;
+ width: 100%;
+ gap: 1vw;
+`;
+
+export const WrapEach = styled.div`
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:left;
+ align-items: left;
+ flex-direction: row;
+ width: 120px;
+ gap: 5px;
 `;

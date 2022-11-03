@@ -6,7 +6,7 @@ export default function Contact() {
 	return (
 		<div>
             <Menu/>
-            <Footer footerComp={<ContactContainer />} imageBackground={"'./assets/img/PRAIA.png'"}/>
+            <Footer footerComponent={<ContactContainer />} imageBackground={"'./assets/img/PRAIA.png'"}/>
 		</div>
 	);
 }

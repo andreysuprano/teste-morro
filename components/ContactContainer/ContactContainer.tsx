@@ -27,7 +27,39 @@ export const ContactContainer = () => {
                      } }/>
                    </S.WrapInputs>
                    <S.WrapChecks>
-                     
+                      <S.CheckLabel>Como prefere ser contato:</S.CheckLabel>
+                      <S.WrapInputsChoice>
+                          <S.WrapEach>
+                            <input type="checkbox" id="WhatsApp" name="WhatsApp"/>
+                            <label>WhatsApp</label>
+                          </S.WrapEach>
+                          <S.WrapEach>
+                            <input type="checkbox" id="Telefone" name="Telefone"/>
+                            <label>Telefone</label>
+                          </S.WrapEach>
+                          <S.WrapEach>
+                            <input type="checkbox" id="Email" name="Email"/>
+                            <label>E-mail</label>
+                          </S.WrapEach>
+                      </S.WrapInputsChoice>
+                      <S.LineBetween/>
+                      <S.CheckLabel>Qual o melhor horário para entrar em  contato:</S.CheckLabel>
+                      <S.WrapInputsChoice>
+                      <S.WrapInputsChoice>
+                          <S.WrapEach>
+                            <input type="checkbox" id="Manha" name="Manha"/>
+                            <label>Manhã</label>
+                          </S.WrapEach>
+                          <S.WrapEach>
+                            <input type="checkbox" id="Tarde" name="Tarde"/>
+                            <label>Tarde</label>
+                          </S.WrapEach>
+                          <S.WrapEach>
+                            <input type="checkbox" id="Noite" name="Noite"/>
+                            <label>Noite</label>
+                          </S.WrapEach>
+                      </S.WrapInputsChoice>
+                        </S.WrapInputsChoice>
                    </S.WrapChecks>
                    <Button>QUERO RECEBER O CONTATO DE UM CONSULTOR</Button>
                 </S.WrapForm>
