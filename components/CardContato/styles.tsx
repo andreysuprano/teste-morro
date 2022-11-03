@@ -13,6 +13,10 @@ export const Container = styled.div`
 	align-items: center;
 
 	box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.16);
+	@media (max-width: 767px) {
+		width: 320px;
+		padding: 30px;
+	}
 `;
 
 export const Title = styled.span`
@@ -21,6 +25,10 @@ export const Title = styled.span`
 	text-align: center;
 	font-weight: 300;
 	margin-bottom: 40px;
+	@media (max-width: 767px) {
+		font-size: 20px;
+		font-weight: 400;
+	}
 `;
 
 export const Button = styled.button`

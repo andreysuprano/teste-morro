@@ -6,6 +6,7 @@ import { BeneficiosSection } from '../components/BeneficiosSection/BeneficiosSec
 import { PicturesSection } from '../components/PicturesSection/PicturesSection';
 import { Footer } from '../components/Footer/Footer';
 import { ContactFooter } from '../components/ContactFooter/ContactFooter';
+import { LocaliazcaoSection } from '../components/LocaliazcaoSection/LocaliazcaoSection';
 
 export default function Home() {
 	return (
@@ -16,7 +17,7 @@ export default function Home() {
 			<PicturesSection />
 			<PerfilSection />
 			<BeneficiosSection />
-			{/* <LocaliazcaoSection /> */}
+			{/* <LocaliazcaoSection />
 			<Footer footerComponent={
 				<ContactFooter 
 					formLabel={false} 
@@ -25,7 +26,7 @@ export default function Home() {
 					de um dos nossos consultores.'
 				/>}
 				imageBackground="./assets/img/FooterHome.png" 
-			/>
+			/> */}
 		</div>
 	);
 }

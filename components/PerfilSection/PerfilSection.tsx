@@ -10,6 +10,7 @@ export const PerfilSection = () => {
 				<S.Content>
 					<S.Icon src={PointerIcon} alt="" />
 					<S.TextWrapper>
+						<S.IconMobile src={PointerIcon} alt="" />
 						<S.Title>Escolha o seu perfil</S.Title>
 						<S.Paragraph>
 							Você tem 3 maneiras de usufruir o Morro dos Anjos. Escolha qual se encaixa melhor em seu
