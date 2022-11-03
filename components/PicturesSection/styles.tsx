@@ -16,10 +16,11 @@ export const Container = styled.section`
     margin-bottom: 10vh;
 	position: relative;
 	@media (max-width: 767px) {
-		height: 600px;
+		/* height: 600px;
 		align-items: center;
         flex-direction: column;
-		margin-bottom: -100px;
+		margin-bottom: -100px; */
+		display: none;
 	}
 	@media (max-width: 1200px) {
 		height: 800px;
@@ -352,3 +353,164 @@ export const SeventhDiv = styled.div<IWords>`
 	}
 `;
 
+export const ContainerMobile = styled.section`
+	@media (max-width: 767px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: transparent;
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		position: relative;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+
+
+
+export const ComponentBackgroundMobileFirst = styled(Image)`
+	@media (max-width: 767px) {
+		width: 150%;
+		min-height: 90%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: -120px;
+		animation-name: fromSide;
+		animation-duration: 400ms;
+		animation-timing-function: linear;
+	}
+	@keyframes fromSide {
+		from{
+			opacity: 0;
+			transform: translateX(500px);
+		}
+		to{
+			opacity: 1;
+			transform: translateX(0);
+
+		}
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const WrapCircles = styled.div`
+	@media (max-width: 767px) {
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction: row;
+		width: 100%;
+		gap: 4vw;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const Circle1 = styled.div<IWords>`
+	@media (max-width: 767px) {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color:${({pic}) => pic === 1 ? "RGBA(25,170,233)" : "#ffff"} ;
+
+	border: 2px solid #171946;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const Circle2 = styled.div<IWords>`
+	@media (max-width: 767px) {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color:${({pic}) => pic === 2 ? "RGBA(25,170,233)" : "#ffff"} ;
+
+	border: 2px solid #171946;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const Circle3 = styled.div<IWords>`
+	@media (max-width: 767px) {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color:${({pic}) => pic === 3 ? "RGBA(25,170,233)" : "#ffff"} ;
+
+	border: 2px solid #171946;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const Circle4 = styled.div<IWords>`
+	@media (max-width: 767px) {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color:${({pic}) => pic === 4 ? "RGBA(25,170,233)" : "#ffff"} ;
+
+	border: 2px solid #171946;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const Circle5 = styled.div<IWords>`
+	@media (max-width: 767px) {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color:${({pic}) => pic === 5 ? "RGBA(25,170,233)" : "#ffff"} ;
+
+	border: 2px solid #171946;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const Circle6 = styled.div<IWords>`
+	@media (max-width: 767px) {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color:${({pic}) => pic === 6 ? "RGBA(25,170,233)" : "#ffff"} ;
+
+	border: 2px solid #171946;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const Circle7 = styled.div<IWords>`
+	@media (max-width: 767px) {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color:${({pic}) => pic === 7 ? "RGBA(25,170,233)" : "#ffff"} ;
+	border: 2px solid #171946;
+	}
+	@media (min-width: 768px) {
+		display: none;
+	}
+`;

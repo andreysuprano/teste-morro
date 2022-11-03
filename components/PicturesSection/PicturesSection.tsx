@@ -50,6 +50,24 @@ export const PicturesSection = () => {
                     </S.SeventhDiv>
                 </S.WrapRight>
 			</S.Container>
+            <S.ContainerMobile>
+                {pic === 1 && <S.ComponentBackgroundMobileFirst src={FirstImage} alt="Background Image" />}
+                {pic === 2 && <S.ComponentBackgroundMobileFirst src={SecondImage} alt="Background Image" />}
+                {pic === 3 && <S.ComponentBackgroundMobileFirst src={ThirdImage} alt="Background Image" />}
+                {pic === 4 && <S.ComponentBackgroundMobileFirst src={FourthImage} alt="Background Image" />}
+                {pic === 5 && <S.ComponentBackgroundMobileFirst src={FifthImage} alt="Background Image" />}
+                {pic === 6 && <S.ComponentBackgroundMobileFirst src={SixthImage} alt="Background Image" />}
+                {pic === 7 && <S.ComponentBackgroundMobileFirst src={SeventhImage} alt="Background Image" />}
+           <S.WrapCircles>
+                <S.Circle1 onClick={() => setPic(1)} pic={pic}/>
+                <S.Circle2 onClick={() => setPic(2)} pic={pic}/>
+                <S.Circle3 onClick={() => setPic(3)} pic={pic}/>
+                <S.Circle4 onClick={() => setPic(4)} pic={pic}/>
+                <S.Circle5 onClick={() => setPic(5)} pic={pic}/>
+                <S.Circle6 onClick={() => setPic(6)} pic={pic}/>
+                <S.Circle7 onClick={() => setPic(7)} pic={pic}/>
+           </S.WrapCircles>
+            </S.ContainerMobile>
 		</div>
 	);
 };
