@@ -3,15 +3,13 @@ import Image from 'next/image';
 
 export const Container = styled.section`
 	width: 100vw;
-	height: 100vh;
+	height: auto;
 	background: url('./assets/img/backgroundTopo.png') no-repeat;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	@media (max-width: 767px) {
-		height: auto;
-		flex-direction: column;
-	}
+	padding-bottom: 200px;
+	flex-wrap: wrap;
 `;
 
 export const LeftContainer = styled.div`
