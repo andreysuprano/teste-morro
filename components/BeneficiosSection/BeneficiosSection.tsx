@@ -1,4 +1,3 @@
-import { Title } from '../DescricaoSection/styles';
 import * as S from './styles';
 import Image from 'next/image';
 
@@ -7,13 +6,12 @@ import CalendarIcon from '../../assets/svg/CalendarIcon.svg';
 import HomeIcon from '../../assets/svg/HomeIcon.svg';
 import SwingIcon from '../../assets/svg/SwingIcon.svg';
 import PatrimonyIcon from '../../assets/svg/PatrimonyIcon.svg';
-import { Button } from '../CardContato/styles';
 
 export const BeneficiosSection = () => {
 	return (
 		<S.Container>
 			<S.Wrapper>
-				<Title style={{ maxWidth: 1000 }}>NO MORRO DOS ANJOS, VOCÊ PAGA PELO TEMPO QUE QUISER USAR.</Title>
+				<S.Title>NO MORRO DOS ANJOS, VOCÊ PAGA PELO TEMPO QUE QUISER USAR.</S.Title>
 				<S.BeneficiosContainer>
 					<S.BeneficioWrapper>
 						<Image src={KeyIcon} alt="" />
@@ -29,16 +27,14 @@ export const BeneficiosSection = () => {
 					</S.BeneficioWrapper>
 					<S.BeneficioWrapper>
 						<Image src={SwingIcon} alt="" />
-						<S.Paragraph>
-							Sua casa sem stress: você não se preocupa com manutenção, imprevistos ou reformas
-						</S.Paragraph>
+						<S.Paragraph>Você sem stress com manutenção, imprevistos ou reformas</S.Paragraph>
 					</S.BeneficioWrapper>
 					<S.BeneficioWrapper>
 						<Image src={PatrimonyIcon} alt="" />
 						<S.Paragraph>Patrimônio familiar: imóveis com escritura pública e matrícula</S.Paragraph>
 					</S.BeneficioWrapper>
 				</S.BeneficiosContainer>
-				<Button>QUERO FALAR COM UM CONSULTOR</Button>
+				<S.Button>QUERO FALAR COM UM CONSULTOR</S.Button>
 			</S.Wrapper>
 		</S.Container>
 	);

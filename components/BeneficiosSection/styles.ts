@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Title as TitleBase } from '../DescricaoSection/styles';
+import { Button as ButtonBase } from '../CardContato/styles';
 
 export const Container = styled.section`
     width: 100vw;
@@ -17,6 +19,9 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 767px) {
+		padding: 50px 0px 50px 0px;
+	}
 `;
 
 export const BeneficiosContainer = styled.div`
@@ -35,6 +40,9 @@ export const BeneficioWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 767px) {
+		padding: 25px 15px 25px 15px;
+	}
 `;
 
 export const Paragraph = styled.p`
@@ -43,4 +51,27 @@ export const Paragraph = styled.p`
     font-color: ${props => props.theme.secondary};
     margin-top: 20px;
     text-align: center;
+    @media (max-width: 767px) {
+		font-size:18px;
+        max-width: 150px;
+        line-height: 20px;
+	}
+`;
+
+export const Title = styled(TitleBase)`
+    max-width: 1000px;
+    @media (max-width: 767px) {
+		font-size:32px;
+        max-width: 300px;
+        font-weight: 300;
+        line-height: 40px;
+        text-align: left;
+	}
+`;
+
+export const Button = styled(ButtonBase)`
+   @media (max-width: 767px) {
+		font-size:18px;
+        padding: 15px;
+	}
 `;

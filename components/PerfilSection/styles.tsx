@@ -29,6 +29,17 @@ export const Icon = styled(Image)`
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		display: none;
+	}
+`;
+export const IconMobile = styled(Image)`
+	display: none;
+	@media (max-width: 767px) {
+		width: 20%;
+		height: 20%;
+		display: flex;
+		align-content: flex-start;
+		margin-left: -8px;
 	}
 `;
 
@@ -47,6 +58,8 @@ export const WrapperPerfis = styled.section`
 		flex-direction: column;
 		align-items: center;
 		background-position: center;
+		background: none;
+		background-color: #fff;
 	}
 `;
 
@@ -66,7 +79,7 @@ export const Content = styled.div`
 	margin-bottom: 150px;
 	@media (max-width: 767px) {
 		padding: 30px;
-		flex-direction: column;
+		margin-bottom: 50px;
 	}
 `;
 
@@ -76,17 +89,35 @@ export const TextWrapper = styled.div`
 	flex-direction: column;
 	@media (max-width: 767px) {
 		text-align: center;
+		justify-content: left;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 `;
 
 export const Title = styled.span`
 	color: ${(props) => props.theme.primary};
 	font-size: 42px;
-	font-weight: 500;
+	font-weight: 300;
+	max-width: 200px;
+	@media (max-width: 767px) {
+		color: ${(props) => props.theme.secondary};
+		font-size: 32px;
+		text-transform: uppercase;
+		text-align: left;
+		line-height: 35px;
+		display: flex;
+		align-items: center;
+	}
 `;
 
 export const Paragraph = styled.p`
 	color: ${(props) => props.theme.secondary};
 	font-size: 20px;
 	font-weight: 200;
+	@media (max-width: 767px) {
+		font-size: 16px;
+		text-align: left;
+		line-height: 25px;
+	}
 `;
