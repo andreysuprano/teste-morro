@@ -7,7 +7,6 @@ interface IImage {
 
 export const Container = styled.div <IImage>`
 	width: 100vw;	
-    flex-direction: column;
     background: url(${(props) => props.imageBackground});
     background-size: cover;
     background-repeat: no-repeat;
