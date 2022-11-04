@@ -98,8 +98,7 @@ export const TextWrapper = styled.div`
 export const Title = styled.span`
 	color: ${(props) => props.theme.primary};
 	font-size: 42px;
-	font-weight: 300;
-	max-width: 200px;
+	font-weight: 600;
 	@media (max-width: 767px) {
 		color: ${(props) => props.theme.secondary};
 		font-size: 32px;
@@ -108,6 +107,8 @@ export const Title = styled.span`
 		line-height: 35px;
 		display: flex;
 		align-items: center;
+		font-weight: 300;
+		max-width: 200px;
 	}
 `;
 

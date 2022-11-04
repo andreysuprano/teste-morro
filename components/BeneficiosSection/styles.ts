@@ -51,6 +51,7 @@ export const Paragraph = styled.p`
     font-color: ${props => props.theme.secondary};
     margin-top: 20px;
     text-align: center;
+    max-width: 150px;
     @media (max-width: 767px) {
 		font-size:18px;
         max-width: 150px;

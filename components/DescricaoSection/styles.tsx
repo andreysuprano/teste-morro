@@ -14,7 +14,7 @@ export const Container = styled.section`
 export const TitleWrapper = styled.div`
 	background: url('./assets/img/LOGO_MARCADAGUA.png') no-repeat;
 	background-position: center;
-	padding: 150px 0px;
+	padding: 170px 0px;
 	display: flex;
 	align-items: center;
 	justify-content: center;

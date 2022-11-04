@@ -10,6 +10,10 @@ export const Container = styled.div <IImage>`
     background: url(${(props) => props.imageBackground});
     background-size: cover;
     background-repeat: no-repeat;
+	@media (max-width: 767px) {
+		background-position: 50% 50%;
+		background-position-y:-130px ;
+	}
 `;
 
 export const Wrapper = styled.div<IImage>`
@@ -18,6 +22,9 @@ export const Wrapper = styled.div<IImage>`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media (max-width: 767px) {
+		padding-bottom:700px ;
+	}
 `;
 
 export const Footer = styled.footer`
@@ -37,18 +44,24 @@ export const Footer = styled.footer`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		padding: 0px;
+		justify-content: space-around;
+		padding: 20px 0px 0px 0px;
 		width: 100%;
-		height: 321px;
+		height: 650px;
     }
 `;
 
-export const Logo = styled(Image)`
-     @media (max-width: 900px) {
-		width: 50px;
-		height:auto;
+export const LogoDesktop = styled(Image)`
+     @media (max-width: 767px) {
+		display: none;
+    }
+`;
 
+export const LogoMobile = styled(Image)`
+	display: none;
+     @media (max-width: 767px) {
+		display: flex;
+		transform: scale(0.8);
     }
 `;
 
@@ -72,11 +85,18 @@ export const WrapMidiaIcons = styled.div`
         gap: 4vw;
 	}
     @media (max-width: 767px) {
-        left: 48%;
-        gap: 8vw;
+        display:none;
+	}
+`;
+
+
+export const WrapMidiaIconsMobile = styled(WrapMidiaIcons)`
+    display:none;
+	@media (max-width: 767px) {
+		display:flex;
 	}
     @media (max-width: 500px) {
-        gap: 10vw;
+		display:flex;
 	}
 `;
 
@@ -85,7 +105,6 @@ export const Icon = styled(Image)`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0.7;
     transform: scale(1.1);
     transition: all 200ms linear;
     :hover{
@@ -106,29 +125,39 @@ export const WrapOptions = styled.div`
     height:auto;
     gap: 1vw;
 	font-size: 14px;
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
 `;
 
 export const Option = styled.p`
-color: ${props => props.theme.primary};
-opacity: 0.5;
+	color: ${props => props.theme.tertiary};
+	@media (max-width: 767px) {
+		font-weight: 100;
+		margin-bottom: 10px;
+	}
 `;
 
 export const LineOver = styled.hr`
-background-color: ${props => props.theme.primary};
-border: none;
-width: 2px;
-height: 15px;
-opacity: 0.5;
-
+	background-color: ${props => props.theme.primary};
+	border: none;
+	width: 2px;
+	height: 15px;
+	opacity: 0.5;
+	@media (max-width: 767px) {
+		display: none;
+	}
 `;
 
 export const LineOverPhones = styled.hr`
-background-color: ${props => props.theme.white};
-border: none;
-width: 2px;
-height: 40px;
-opacity: 1;
-
+	background-color: ${props => props.theme.white};
+	border: none;
+	width: 2px;
+	height: 40px;
+	opacity: 1;
+	@media (max-width: 767px) {
+		display: none;
+	}
 `;
 
 export const WrapContactPhones = styled.div`
@@ -136,13 +165,19 @@ export const WrapContactPhones = styled.div`
 	flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-	gap: 1vw;
+	gap: 4vw;
 	color: ${props => props.theme.white};
 	text-align: center;
+	@media (max-width: 767px) {
+		padding-top: 20px;
+	}
 `;
 
 export const Local = styled.p`
 	color: ${props => props.theme.white};
 	text-align: center;
+	@media (max-width: 767px) {
+		font-size: 10px;
+		padding: 10px;
+	}
 `;
