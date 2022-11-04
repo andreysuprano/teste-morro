@@ -70,13 +70,13 @@ export const Map = styled(Image)`
 `;
 
 export const Title = styled.h1`
-width: 80%;
-text-align: left;
-font-size: 2.6rem;
-line-height: 50px;
-font-weight: 200;
-color: ${props => props.theme.white};
-`;
+    width: 83%;
+    text-align: left;
+    font-size: 2.4rem;
+    line-height: 50px;
+    font-weight: 200;
+    color: ${props => props.theme.white};
+    `;
 
 export const Wrap = styled.div`
     width: 100%;
@@ -86,6 +86,7 @@ export const Wrap = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 1vh;
+    font-size: 14px;
     @media (max-width: 767px){
        font-size: 12px;
         gap: 2vw;

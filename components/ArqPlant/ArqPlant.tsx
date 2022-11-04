@@ -27,31 +27,31 @@ export const ArqPlant = () => {
                                 <li>2 QUADRAS DE TÊNIS</li>
                                 <li>4 QUADRAS DE VÔLEI DE AREIA / BEACH TENNIS</li>
                                 <li>ADMINISTRAÇÃO / SERVIÇOS</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>ANGE RESTAURANTE COZINHA ORIENTAL</li>
+                                <li>LOJA DE CONVENIÊNCIA / EMPÓRIO</li>
+                                <li>RECEPÇÃO / LOBBY</li>
+                                <li>PORTE-COCHÈRE</li>
+                                <li>PIZZARIA / HANBURGUERIA / MICROCERVEJARIA</li>
                             </ol>
                         </S.Left>
                         <S.Right>
                         <ol>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>PARQUE AQUÁTICO INDOOR</li>
+                                <li>ACADEMIA</li>
+                                <li>SAUNAS / SALAS DE MASSAGEM</li>
+                                <li>BOULEVARD COM ESPELHOS D'ÀGUA</li>
+                                <li>CAPELA</li>
+                                <li>PRAIA</li>
+                                <li>PISCINA DE BIRIBOL</li>
+                                <li>HIDROMASSAGEM</li>
+                                <li>PISCINA ADULTO</li>
+                                <li>BAR MOLHADO</li>
+                                <li>BAR DA PISCINA</li>
+                                <li>TOBOGÁGUAS</li>
+                                <li>PISCINA DE SURFE</li>
+                                <li>TOBOGÃS</li>
+                                <li>LAZY RIVER</li>
+                                <li>AQUAPLAY INFANTIL</li>
                             </ol>
                         </S.Right>
                     </S.Wrap>
