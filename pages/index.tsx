@@ -17,7 +17,7 @@ export default function Home() {
 			<PicturesSection />
 			<PerfilSection />
 			<BeneficiosSection />
-			{/* <LocaliazcaoSection />
+			<LocaliazcaoSection />
 			<Footer footerComponent={
 				<ContactFooter 
 					formLabel={false} 
@@ -26,7 +26,7 @@ export default function Home() {
 					de um dos nossos consultores.'
 				/>}
 				imageBackground="./assets/img/FooterHome.png" 
-			/> */}
+			/>
 		</div>
 	);
 }
