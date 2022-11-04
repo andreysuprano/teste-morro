@@ -42,7 +42,7 @@ export const Text = styled.h1`
     text-align: center;
     background-color: transparent;
     @media (max-width: 767px){
-        font-size: 3rem;
-
+        font-size: 2rem;
+        font-weight: 500;
         }
 `;
