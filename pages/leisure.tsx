@@ -4,6 +4,8 @@ import { HeaderGeneralComp } from "../components/HeaderGeneralComp/HeaderGeneral
 import { ContactFooter } from '../components/ContactFooter/ContactFooter';
 import { CarouselLeisure } from "../components/CarouselLeisure/CarouselLeisure";
 import { ArqPlant } from "../components/ArqPlant/ArqPlant";
+import { LeisureBanner } from "../components/LeisureBanner/LeisureBanner";
+
 export default function Leisure() {
 	return (
 		<div>
@@ -11,6 +13,7 @@ export default function Leisure() {
             <HeaderGeneralComp
 				text={"UM NOVO JEITO DE VIVER A VIDA"}
 				imageBackground={"./assets/img/leisure.png"}/>
+			<LeisureBanner/>
 			<CarouselLeisure/>
 			<ArqPlant/>
             <Footer
