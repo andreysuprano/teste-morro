@@ -3,7 +3,7 @@ import { Footer } from "../components/Footer/Footer";
 import { HeaderGeneralComp } from "../components/HeaderGeneralComp/HeaderGeneralComp";
 import { ContactFooter } from '../components/ContactFooter/ContactFooter';
 import { CarouselLeisure } from "../components/CarouselLeisure/CarouselLeisure";
-
+import { ArqPlant } from "../components/ArqPlant/ArqPlant";
 export default function Leisure() {
 	return (
 		<div>
@@ -12,6 +12,7 @@ export default function Leisure() {
 				text={"UM NOVO JEITO DE VIVER A VIDA"}
 				imageBackground={"./assets/img/leisure.png"}/>
 			<CarouselLeisure/>
+			<ArqPlant/>
             <Footer
 				footerComponent={
 				<ContactFooter 

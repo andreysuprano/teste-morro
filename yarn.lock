@@ -1727,12 +1727,12 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-alice-carousel@^2.6.4:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-2.6.4.tgz#c04694bce8b7e0b6b295af1f4c32167707c48529"
-  integrity sha512-G2RTX8SVuqkif3n3qEF9yd1NOqdM8S8SmB7yZ1hiUMMgmgyA+h7HJGTnIbblmU7h7AtaZQ4V6qhJJKxJC0lacQ==
+react-device-detect@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-device-detect/-/react-device-detect-2.2.2.tgz#dbabbce798ec359c83f574c3edb24cf1cca641a5"
+  integrity sha512-zSN1gIAztUekp5qUT/ybHwQ9fmOqVT1psxpSlTn1pe0CO+fnJHKRLOWWac5nKxOxvOpD/w84hk1I+EydrJp7SA==
   dependencies:
-    vanilla-swipe "^2.2.0"
+    ua-parser-js "^1.0.2"
 
 react-dom@18.2.0:
   version "18.2.0"
@@ -2047,6 +2047,11 @@ typescript@4.8.4:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
 
+ua-parser-js@^1.0.2:
+  version "1.0.32"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-1.0.32.tgz#786bf17df97de159d5b1c9d5e8e9e89806f8a030"
+  integrity sha512-dXVsz3M4j+5tTiovFVyVqssXBu5HM47//YSOeZ9fQkdDKkfzv2v3PP1jmH6FUyPW+yCSn7aBVK1fGGKNhowdDA==
+
 unbox-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz#29032021057d5e6cdbd08c5129c226dff8ed6f9e"
@@ -2068,11 +2073,6 @@ use-sync-external-store@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
-
-vanilla-swipe@^2.2.0:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/vanilla-swipe/-/vanilla-swipe-2.4.1.tgz#697d58bde3729db3c80fd3de488a54a8eae05664"
-  integrity sha512-o6pfI0dipet88ZnPLV4Jx04Ia+U3xANh14vhROW2TOe/mrwk2JGG68+Z0BPoD1YUcQQEnK4SZBXkqFe+K1l7/w==
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
