@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer/Footer";
 import { HeaderGeneralComp } from "../components/HeaderGeneralComp/HeaderGeneralComp";
 import { ContactFooter } from '../components/ContactFooter/ContactFooter';
 import { GridImage } from "../components/GridImage/GridImage";
+import {IconsAccommod} from "../components/IconsAccommod/IconsAccommod";
 
 export default function Accommodations() {
 	return (
@@ -22,6 +23,7 @@ export default function Accommodations() {
 				buttonPosition="text" 
 				principalPic="./assets/img/Acomodations/Principal.png"
 			/>
+			<IconsAccommod/>
 			<Footer
 				footerComponent={
 				<ContactFooter 

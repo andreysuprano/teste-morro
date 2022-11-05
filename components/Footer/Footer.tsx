@@ -7,6 +7,7 @@ import Twi from '../../assets/img/icone_twitter.png';
 import Face from '../../assets/img/icone_facebook.png';
 import Whats from '../../assets/img/icone whatsapp.png';
 import Phone from '../../assets/img/icone_fone.png';
+import Link from 'next/link';
 
 interface footerProps {
 	imageBackground: string;
@@ -30,19 +31,19 @@ export const Footer = ({ imageBackground, footerComponent }: footerProps) => {
 							<S.Icon src={Youtube} alt="" />
 						</S.WrapMidiaIcons>
 						<S.WrapOptions>
-							<S.Option>ESTRUTURA E LAZER</S.Option>
+							<S.Option><Link href="/leisure" style={{textDecoration: "none", color:"inherit"}}>ESTRUTURA E LAZER</Link></S.Option>
 							<S.LineOver />
-							<S.Option>ACOMODAÇÕES</S.Option>
+							<S.Option><Link href="/accommodations" style={{textDecoration: "none", color:"inherit"}}>ACOMODAÇÕES</Link></S.Option>
 							<S.LineOver />
-							<S.Option>CURTIR A FAMÍLIA</S.Option>
+							<S.Option><Link href="/family" style={{textDecoration: "none", color:"inherit"}}>CURTIR A FAMÍLIA</Link></S.Option>
 							<S.LineOver />
-							<S.Option>PROLONGUE SUA FÉ</S.Option>
+							<S.Option><Link href="/faith" style={{textDecoration: "none", color:"inherit"}}>PROLONGUE SUA FÉ</Link></S.Option>
 							<S.LineOver />
-							<S.Option>INVESTIR</S.Option>
+							<S.Option><Link href="/invest" style={{textDecoration: "none", color:"inherit"}}>INVESTIR</Link></S.Option>
 							<S.LineOver />
-							<S.Option>FAQ</S.Option>
+							<S.Option><Link href="/contact" style={{textDecoration: "none", color:"inherit"}}>FAQ</Link></S.Option>
 							<S.LineOver />
-							<S.Option>CONTATO</S.Option>
+							<S.Option><Link href="/contact" style={{textDecoration: "none", color:"inherit"}}>CONTATO</Link></S.Option>
 						</S.WrapOptions>
 						<S.WrapMidiaIconsMobile>
 							<S.Icon src={Face} alt="" />
@@ -51,10 +52,10 @@ export const Footer = ({ imageBackground, footerComponent }: footerProps) => {
 							<S.Icon src={Youtube} alt="" />
 						</S.WrapMidiaIconsMobile>
 						<S.WrapContactPhones>
-							<S.Icon src={Phone} alt="" />
+							<S.Icon className='hoverNot' src={Phone} alt="" />
 							<p>(43) 9844-6070</p>
 							<S.LineOverPhones />
-							<S.Icon src={Whats} alt="" />
+							<S.Icon className='hoverNot' src={Whats} alt=""/>
 							<p>(43) 9844-6070</p>
 						</S.WrapContactPhones>
 						<S.Local>

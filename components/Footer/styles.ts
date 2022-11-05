@@ -168,6 +168,11 @@ export const WrapContactPhones = styled.div`
 	gap: 4vw;
 	color: ${props => props.theme.white};
 	text-align: center;
+	.hoverNot{
+		margin-right: -3vw;
+		transform: none;
+		cursor:default ;
+	}
 	@media (max-width: 767px) {
 		padding-top: 20px;
 	}

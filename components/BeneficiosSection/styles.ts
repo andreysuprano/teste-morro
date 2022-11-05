@@ -48,7 +48,7 @@ export const BeneficioWrapper = styled.div`
 export const Paragraph = styled.p`
     font-size: 14px;
     font-weight: 200;
-    font-color: ${props => props.theme.secondary};
+    color: ${props => props.theme.secondary};
     margin-top: 20px;
     text-align: center;
     max-width: 150px;
