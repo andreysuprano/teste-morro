@@ -364,6 +364,9 @@ export const ContainerMobile = styled.section`
 		height: 600px;
 		overflow: hidden;
 		position: relative;
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+
 	}
 	@media (min-width: 768px) {
 		display: none;
@@ -375,12 +378,12 @@ export const ContainerMobile = styled.section`
 
 export const ComponentBackgroundMobileFirst = styled(Image)`
 	@media (max-width: 767px) {
-		width: 150%;
+		width: 200%;
 		min-height: 90%;
 		height: auto;
 		position: absolute;
 		top: 0;
-		left: -120px;
+		left: -210px;
 		animation-name: fromSide;
 		animation-duration: 400ms;
 		animation-timing-function: linear;

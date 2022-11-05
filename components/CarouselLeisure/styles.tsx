@@ -8,21 +8,22 @@ export const Container = styled.section`
 	align-items: center;
 	justify-content: center;
 	gap: 4vh;
-	@media (max-width: 767px) {
-		display: none;
-	}
+
 `;
 
 export const Wrap = styled.div`
 	width: 70%;
+	max-width: 70%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 4vh;
-	@media (min-width: 767px) {
-		width: 100%;
+	@media (max-width: 767px) {
+		display: none;
+		width: 200px;
+		max-width: 200px;
 		.carousel img {
 			border-radius: 0px;
 		}
