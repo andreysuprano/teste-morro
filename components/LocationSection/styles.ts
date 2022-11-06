@@ -112,8 +112,10 @@ export const DataTitleHilightMobile = styled(DataTitle)`
 	font-weight: 700;
 	display: none;
 	@media (max-width: 767px) {
+		font-size: 36px;
 		display: flex;
-		margin-top: -150px;
+		text-align: center;
+		margin: 0 auto;
 	}
 `;
 
@@ -123,14 +125,16 @@ export const DataMinWeightMobile = styled(DataTitle)`
 	line-height: 30px;
 	display: none;
 	@media (max-width: 767px) {
+		font-size: 18px;
 		display: flex;
+		text-align: center;
 	}
 `;
 
 export const GridImage = styled.img`
 	@media (max-width: 767px) {
-		transform: scale(0.6);
-		margin-top: -200px;
+		width: 100%;
+		margin-top: -100px;
 	}
 `;
 
@@ -140,6 +144,7 @@ export const ImageWrapper = styled.div`
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 	}
 `;
 
