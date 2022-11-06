@@ -72,6 +72,7 @@ export const Title = styled.span<ComponentInverse>`
     text-align: ${props => props.inverse ? 'left':'right'};
     @media (max-width: 767px) {
         font-size: 3rem;
+        text-align: center;
 	}
 `;
 
@@ -85,6 +86,9 @@ export const Paragraph = styled.p<ComponentInverse>`
     font-weight: 200;
     color: ${props => props.theme.secondary};
     text-align: ${props => props.inverse ? 'left':'right'};
+    @media (max-width: 767px) {
+        text-align: center;
+	}
 `;
 
 export const Button = styled(BaseButton)<ButtonProps>`

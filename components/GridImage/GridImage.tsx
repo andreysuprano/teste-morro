@@ -4,7 +4,7 @@ import * as S from './styles';
 interface GridImageProps {
 	principalPic: string;
 	pic1: string;
-	pic2: string;
+	pic2?: string;
 	pic3?: string;
 	inverse?: boolean;
 	button?: boolean;
@@ -47,7 +47,7 @@ export const GridImage = ({
 				<S.PrincipalImage src={principalPic} alt="" />
 				<S.ThumbContainer inverse={inverse}>
 					<S.Image src={pic1} alt="" />
-					<S.Image src={pic2} alt="" />
+					{pic2 ? <S.Image src={pic2} alt="" /> : null}
 					{ButtonLocation && button ? (
 						<S.Button position={ButtonLocation}>FALE JÁ COM UM CONSULTOR</S.Button>
 					) : null}
