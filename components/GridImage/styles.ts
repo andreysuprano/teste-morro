@@ -97,3 +97,25 @@ export const Button = styled(BaseButton)<ButtonProps>`
 		display:none;
 	}
 `;
+
+export const ButtonMobileWrapper = styled.div`
+	display:none;
+    width: 100vw;
+    margin-top: -20px;
+    @media (max-width: 767px) {
+		display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+	}
+`;
+
+export const ButtonMobile = styled(BaseButton)<ButtonProps>`
+	display:none;
+    width: 80%;
+    @media (max-width: 767px) {
+		display:flex;
+        align-items: center;
+        justify-content: center;
+	}
+`;

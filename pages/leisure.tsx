@@ -51,6 +51,7 @@ export default function Leisure() {
 				button={false}
 				inverse={true}
 				list={Lists[0]}
+				mobileButton={false}
 			/>
 
 			<GridImage
@@ -63,6 +64,7 @@ export default function Leisure() {
 				button={false}
 				inverse={false}
 				list={Lists[1]}
+				mobileButton={false}
 			/>
 
 			<GridImage
@@ -76,6 +78,7 @@ export default function Leisure() {
 				button={false}
 				inverse={true}
 				list={Lists[2]}
+				mobileButton={false}
 			/>
 			<ArqPlant />
 			<Footer
