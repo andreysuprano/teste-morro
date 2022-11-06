@@ -23,7 +23,7 @@ type SimpleContactForm = {
 }
 
 export const sendFormSubmit = (formData:ContactForm) => { 
-    fetch('https://rota/rola', {
+    fetch('https://rota/rotaComplemento', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
