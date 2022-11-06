@@ -4,6 +4,7 @@ import { HeaderGeneralComp } from "../components/HeaderGeneralComp/HeaderGeneral
 import { ContactFooter } from '../components/ContactFooter/ContactFooter';
 import { GridImage } from "../components/GridImage/GridImage";
 import {IconsAccommod} from "../components/IconsAccommod/IconsAccommod";
+import { AccomodPlants } from "../components/AccomodPlants/AccomodPlants";
 
 export default function Accommodations() {
 	return (
@@ -23,6 +24,7 @@ export default function Accommodations() {
 				buttonPosition="text" 
 				principalPic="./assets/img/Acomodations/Principal.png"
 			/>
+			<AccomodPlants/>
 			<IconsAccommod/>
 			<Footer
 				footerComponent={

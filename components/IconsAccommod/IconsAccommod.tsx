@@ -30,57 +30,57 @@ export const IconsAccommod = () => {
         <S.WrapItems>
             <Image src={Wifi} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>Internet / wi-Fi<br/>de alta velocidade</h5>
+                    <p>Todos os chalés contam com wi-fi de alta velocidade.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={Cozinha} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>Cozinha com<br/>enxoval completo</h5>
+                    <p>Cozinha completa com todos os utensílios necessários.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={Dorms} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>01 ou 02<br/>dormitórios</h5>
+                    <p>Os chalés de 60 m² contam com 1 dormitório; e as casas vila de 90 m² com 2 dormitórios, sendo 1 suíte.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={TV} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>Televisão</h5>
+                    <p>Todas as acomodações do Morro dos Anjos possuem TV com diversos canais ao seu dispor.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={Frigo} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>Frigobar</h5>
+                    <p>Todas as acomodações do Morro dos Anjos possuem um frigobar ao seu dispor.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={Varanda} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
+                <h5>Sala com varanda</h5>
                     <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={Ar} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>Ar-condicionado</h5>
+                    <p>Conte com ar-condicionado para deixar o clima como desejar.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={Micro} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>Micro-ondas</h5>
+                    <p>Praticidade e velocidade para o seu dia-a-dia durante sua estadia.</p>
                 </S.WrapTexts>
         </S.WrapItems>
     </S.WrapAll>

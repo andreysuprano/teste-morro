@@ -22,7 +22,7 @@ export const LineUp = styled.hr`
 	height: 0.6vh;
     background-color: ${(props) => props.theme.secondary};
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgb(0,0,0,0.4) 0px 20px 150px 80px;
     transition: all 200ms linear;
 `;
 
