@@ -2,6 +2,7 @@ import * as S from './styles';
 
 import PointerIcon from '../../assets/svg/PointerIcon.svg';
 import { CardPerfil } from '../CardPerfil/CardPerfil';
+import Link from 'next/link';
 
 export const PerfilSection = () => {
 	return (
@@ -22,9 +23,9 @@ export const PerfilSection = () => {
 			<S.ContainerPerfis>
 				<S.WrapperPerfis>
 					<S.Perfis>
-						<CardPerfil title="CURTIR COM A FAMÍLIA" href="" imageUrl="./assets/img/FAMILIA.png" />
-						<CardPerfil title="INVESTIR" href="" imageUrl="./assets/img/INVESTIDOR.png" />
-						<CardPerfil title="PRATICAR A FÉ" href="" imageUrl="./assets/img/FE.png" />
+						<Link href={"/family"} style={{textDecoration: "none", color:"inherit"}}><CardPerfil title="CURTIR COM A FAMÍLIA" href="" imageUrl="./assets/img/FAMILIA.png" /></Link>
+						<Link href={"/invest"} style={{textDecoration: "none", color:"inherit"}}><CardPerfil title="INVESTIR" href="" imageUrl="./assets/img/INVESTIDOR.png" /></Link>
+						<Link href={"/faith"} style={{textDecoration: "none", color:"inherit"}}><CardPerfil title="PRATICAR A FÉ" href="" imageUrl="./assets/img/FE.png" /></Link>
 					</S.Perfis>
 				</S.WrapperPerfis>
 			</S.ContainerPerfis>

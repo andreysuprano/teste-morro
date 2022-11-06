@@ -43,11 +43,11 @@ export const Menu = () => {
               <S.PrincipalNav><Link href="/" style={{textDecoration: "none", color:"inherit"}}>• HOME</Link></S.PrincipalNav>
               <S.PrincipalNavNone>• SOBRE O MORRO DOS ANJOS</S.PrincipalNavNone>
                 <S.SublNav><Link href="/leisure" style={{textDecoration: "none", color:"inherit"}}>• ESTRUTURA E LAZER</Link></S.SublNav>
-                <S.SublNav><Link href="/accommodations" style={{textDecoration: "none", color:"inherit"}}>• ACOMODACOES</Link></S.SublNav>
+                <S.SublNav><Link href="/accommodations" style={{textDecoration: "none", color:"inherit"}}>• ACOMODAÇÕES</Link></S.SublNav>
               <S.PrincipalNavNone>• ENCONTRE O SEU PERFIL</S.PrincipalNavNone>
-                <S.SublNav><Link href="/family" style={{textDecoration: "none", color:"inherit"}}>• CURTIR COM A FAMILIA</Link></S.SublNav>
+                <S.SublNav><Link href="/family" style={{textDecoration: "none", color:"inherit"}}>• CURTIR COM A FAMÍLIA</Link></S.SublNav>
                 <S.SublNav><Link href="/invest" style={{textDecoration: "none", color:"inherit"}}>• INVESTIR</Link></S.SublNav>
-                <S.SublNav><Link href="/faith" style={{textDecoration: "none", color:"inherit"}}>• PRATICAR A FE</Link></S.SublNav>
+                <S.SublNav><Link href="/faith" style={{textDecoration: "none", color:"inherit"}}>• PRATICAR A FÉ</Link></S.SublNav>
               <S.PrincipalNav><Link href="/contact" style={{textDecoration: "none", color:"inherit"}}>• CONTATO</Link></S.PrincipalNav>
             </S.WrapMenuLinks>
             <S.WrapMidiaIcons>

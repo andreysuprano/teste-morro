@@ -26,7 +26,11 @@ export const CarouselLeisure = () => {
 				relaxar. São piscinas incríceis de águas quentes termais para todas as idades, disponíveis<br />
 				para você e sua família aproveitarem em qualquer estação do ano.
 			</S.SubTitle>
-			<Button>FALE JÁ COM UM CONSULTOR</Button>
+			<Button>
+			<a style={{textDecoration: "none", color: "inherit"}} href="https://api.whatsapp.com/send?phone=554398446070&text=Ol%C3%A1%20vim%20do%20site%2C%20gostaria%20de%20falar%20com%20um%20consultor!" target="_blank" rel="noreferrer">
+							FALE JÁ COM UM CONSULTOR
+							</a>
+			</Button>
 			<S.Wrap>
 				<Carousel
 					thumbWidth={isMobile ? 40 : 200}
@@ -35,7 +39,6 @@ export const CarouselLeisure = () => {
 					swipeable={true}
 					useKeyboardArrows={true}
 					emulateTouch={true}
-					autoFocus={true}
 				>
 					<div>
 						<img src="./assets/img/leisure.png" />

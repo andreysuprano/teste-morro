@@ -40,8 +40,8 @@ export const Footer = ({ imageBackground, footerComponent }: footerProps) => {
 							<S.Option><Link href="/faith" style={{textDecoration: "none", color:"inherit"}}>PROLONGUE SUA FÉ</Link></S.Option>
 							<S.LineOver />
 							<S.Option><Link href="/invest" style={{textDecoration: "none", color:"inherit"}}>INVESTIR</Link></S.Option>
-							<S.LineOver />
-							<S.Option><Link href="/contact" style={{textDecoration: "none", color:"inherit"}}>FAQ</Link></S.Option>
+							{/* <S.LineOver /> */}
+							{/* <S.Option><Link href="" style={{textDecoration: "none", color:"inherit"}}>FAQ</Link></S.Option> */}
 							<S.LineOver />
 							<S.Option><Link href="/contact" style={{textDecoration: "none", color:"inherit"}}>CONTATO</Link></S.Option>
 						</S.WrapOptions>

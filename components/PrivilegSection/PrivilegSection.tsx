@@ -13,7 +13,11 @@ export const PrivilegSection = () => {
         <p>Ao lado do Santuário de Sçao Miguel Arcanjo, o terceiro<br/>
         maior santuário do mundo dedicado ao Arcanjo e um<br/>
         dos destinos religiosos mais procurados do Brasil.</p>
-        <Button>FALE JÁ COM UM CONSULTOR</Button>
+        <Button>
+        <a style={{textDecoration: "none", color: "inherit"}} href="https://api.whatsapp.com/send?phone=554398446070&text=Ol%C3%A1%20vim%20do%20site%2C%20gostaria%20de%20falar%20com%20um%20consultor!" target="_blank" rel="noreferrer">
+							FALE JÁ COM UM CONSULTOR
+							</a>
+        </Button>
 		</S.Wrap>
 			</S.Container>
 	);

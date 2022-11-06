@@ -26,7 +26,13 @@ export const LocaliazcaoSection = () => {
 							<S.Km>442km</S.Km>
 						</S.Localizacao>
 					</S.Localizacoes>
-					<S.Button>QUERO FALAR COM UM CONSULTOR</S.Button>
+					
+							<S.Button>
+							<a style={{textDecoration: "none", color: "inherit"}} href="https://api.whatsapp.com/send?phone=554398446070&text=Ol%C3%A1%20vim%20do%20site%2C%20gostaria%20de%20falar%20com%20um%20consultor!" target="_blank" rel="noreferrer">
+							QUERO FALAR COM UM CONSULTOR
+							</a>
+							</S.Button>
+				
 				</S.Wrapper>
 				<S.Mapa />
 			</S.Container>
