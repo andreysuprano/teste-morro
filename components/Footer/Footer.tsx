@@ -25,10 +25,10 @@ export const Footer = ({ imageBackground, footerComponent }: footerProps) => {
 					<S.LogoDesktop src={Logo} alt="" />
 					<S.WrapFooterBwtween>
 						<S.WrapMidiaIcons>
-							<S.Icon src={Face} alt="" />
-							<S.Icon src={Insta} alt="" />
-							<S.Icon src={Twi} alt="" />
-							<S.Icon src={Youtube} alt="" />
+							<a href="https://www.facebook.com/profile.php?id=100068916745116" target="_blank" rel="noreferrer"><S.Icon src={Face} alt="" /></a>	
+							<a href="https://www.instagram.com/morro_dos_anjos_resortofc/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noreferrer"><S.Icon src={Insta} alt="" /></a>
+							<a href="https://twitter.com/" target="_blank" rel="noreferrer"><S.Icon src={Twi} alt="" /></a>
+							<a href="https://www.youtube.com/c/MorrodosAnjosResortOficial" target="_blank" rel="noreferrer"><S.Icon src={Youtube} alt="" /></a>
 						</S.WrapMidiaIcons>
 						<S.WrapOptions>
 							<S.Option><Link href="/leisure" style={{textDecoration: "none", color:"inherit"}}>ESTRUTURA E LAZER</Link></S.Option>
@@ -46,10 +46,10 @@ export const Footer = ({ imageBackground, footerComponent }: footerProps) => {
 							<S.Option><Link href="/contact" style={{textDecoration: "none", color:"inherit"}}>CONTATO</Link></S.Option>
 						</S.WrapOptions>
 						<S.WrapMidiaIconsMobile>
-							<S.Icon src={Face} alt="" />
-							<S.Icon src={Insta} alt="" />
-							<S.Icon src={Twi} alt="" />
-							<S.Icon src={Youtube} alt="" />
+							<a href="https://www.facebook.com/profile.php?id=100068916745116" target="_blank" rel="noreferrer"><S.Icon src={Face} alt="" /></a>	
+							<a href="https://www.instagram.com/morro_dos_anjos_resortofc/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noreferrer"><S.Icon src={Insta} alt="" /></a>
+							<a href="https://twitter.com/" target="_blank" rel="noreferrer"><S.Icon src={Twi} alt="" /></a>
+							<a href="https://www.youtube.com/c/MorrodosAnjosResortOficial" target="_blank" rel="noreferrer"><S.Icon src={Youtube} alt="" /></a>
 						</S.WrapMidiaIconsMobile>
 						<S.WrapContactPhones>
 							<S.Icon className='hoverNot' src={Phone} alt="" />

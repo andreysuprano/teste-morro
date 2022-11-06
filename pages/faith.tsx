@@ -1,16 +1,22 @@
-import {Menu} from "../components/Menu/Menu";
+import { Menu } from "../components/Menu/Menu";
 import { Footer } from "../components/Footer/Footer";
 import { HeaderGeneralComp } from "../components/HeaderGeneralComp/HeaderGeneralComp";
 import { ContactFooter } from '../components/ContactFooter/ContactFooter';
+import { PrivilegSection } from "../components/PrivilegSection/PrivilegSection";
+import { AngelsSection } from "../components/AngelSection/AngelSection";
+import { LastFaith } from "../components/LastFaith/LastFaith";
 
 export default function Faith() {
 	return (
-		<div>
-            <Menu/>
-			<HeaderGeneralComp
+			<div>
+            	<Menu/>
+				<HeaderGeneralComp
 				text={"VENHA SENTIR TODA A FORÇA DA SUA FÉ."}
 				imageBackground={"./assets/img/faith.png"}/>
-             <Footer
+				<AngelsSection/>
+				<PrivilegSection/>
+				<LastFaith/>
+             	<Footer
 				footerComponent={
 				<ContactFooter 
 					formLabel={true} 
@@ -19,6 +25,6 @@ export default function Faith() {
 					de um dos nossos consultores.'
 				/>}
 				imageBackground={"'./assets/img/footerl.png'"}/>
-		</div>
+			</div>
 	);
 }
