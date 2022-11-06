@@ -30,6 +30,7 @@ export default function Family() {
 				principalPic="./assets/img/Familia/Principal2.png"
 				button={false}
 				inverse={true}
+				mobileButton={false}
 			/>
 			<GridImage 
 				title="IMAGINE TER SUA SEGUNDA CASA AQUI."
@@ -50,6 +51,7 @@ export default function Family() {
 				pic2="./assets/img/Familia/4-2.png" 
 				buttonPosition="pic" 
 				principalPic="./assets/img/Familia/Principal4.png"
+				mobileButton={false}
 			/>
         	<Footer
 				footerComponent={

@@ -72,6 +72,7 @@ export const Title = styled.span<ComponentInverse>`
     text-align: ${props => props.inverse ? 'left':'right'};
     @media (max-width: 767px) {
         font-size: 3rem;
+        text-align: center;
 	}
 `;
 
@@ -85,11 +86,36 @@ export const Paragraph = styled.p<ComponentInverse>`
     font-weight: 200;
     color: ${props => props.theme.secondary};
     text-align: ${props => props.inverse ? 'left':'right'};
+    @media (max-width: 767px) {
+        text-align: center;
+	}
 `;
 
 export const Button = styled(BaseButton)<ButtonProps>`
     margin-top: ${props => !props.position ? '50px' : '-200px'};
     @media (max-width: 767px) {
 		display:none;
+	}
+`;
+
+export const ButtonMobileWrapper = styled.div`
+	display:none;
+    width: 100vw;
+    margin-top: -20px;
+    @media (max-width: 767px) {
+		display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+	}
+`;
+
+export const ButtonMobile = styled(BaseButton)<ButtonProps>`
+	display:none;
+    width: 80%;
+    @media (max-width: 767px) {
+		display:flex;
+        align-items: center;
+        justify-content: center;
 	}
 `;
