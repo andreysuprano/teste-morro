@@ -85,7 +85,11 @@ export const IconsAccommod = () => {
         </S.WrapItems>
     </S.WrapAll>
     <br/><br/>
-    <Button>QUERO FALAR COM UM CONSULTOR</Button>
+    <Button>
+    <a style={{textDecoration: "none", color: "inherit"}} href="https://api.whatsapp.com/send?phone=554398446070&text=Ol%C3%A1%20vim%20do%20site%2C%20gostaria%20de%20falar%20com%20um%20consultor!" target="_blank" rel="noreferrer">
+							QUERO FALAR COM UM CONSULTOR
+							</a>
+    </Button>
     </S.Container>
 	);
 };

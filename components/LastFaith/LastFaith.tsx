@@ -27,7 +27,7 @@ export const LastFaith = () => {
                 </S.Left>
                 <S.Right>
                     <Link href="/accommodations" style={{textDecoration: "none", color:"inherit"}}>
-                        <Button className='btnThings'>CONHEÇA NOSSAS ACOMODAÇÕES</Button>
+                        <Link style={{textDecoration: "none", color:"inherit"}} href={"/accommodations"}><Button className='btnThings'>CONHEÇA NOSSAS ACOMODAÇÕES</Button></Link>
                     </Link>
                 </S.Right>
 			</S.Container>

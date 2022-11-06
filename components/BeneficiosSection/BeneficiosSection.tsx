@@ -34,7 +34,9 @@ export const BeneficiosSection = () => {
 						<S.Paragraph>Patrimônio familiar: imóveis com escritura pública e matrícula</S.Paragraph>
 					</S.BeneficioWrapper>
 				</S.BeneficiosContainer>
-				<S.Button>QUERO FALAR COM UM CONSULTOR</S.Button>
+				<a href="https://api.whatsapp.com/send?phone=554398446070&text=Ol%C3%A1%20vim%20do%20site%2C%20gostaria%20de%20falar%20com%20um%20consultor!" target="_blank" rel="noreferrer">
+					<S.Button>QUERO FALAR COM UM CONSULTOR</S.Button>
+				</a>
 			</S.Wrapper>
 		</S.Container>
 	);
