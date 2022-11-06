@@ -7,6 +7,7 @@ export const Container = styled.section`
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 100px;
+	overflow-x: hidden;
 `;
 
 export const GridWrapper = styled.div`

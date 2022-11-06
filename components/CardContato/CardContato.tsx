@@ -1,15 +1,31 @@
+import { useState } from 'react';
+import { sendSimpleFormSubmit } from '../../utils/sendFormSubmit';
 import { Input } from '../Input/Input';
 import * as S from './styles';
 
 export const CardContato = () => {
+	const [ nome, setNome ] = useState('');
+	const [ email, setEmail ] = useState('');
+	const [ telefone, setTelefone ] = useState('');
+	const [ cidade, setCidade ] = useState('');
+
+	const handleSubmit = () => {
+		sendSimpleFormSubmit({
+			nome,
+			email,
+			telefone,
+			cidade
+		});
+	};
+
 	return (
 		<S.Container>
 			<S.Title>QUER SABER MAIS SOBRE O MORRO DOS ANJOS?</S.Title>
-			<Input type="text" placeholder="Nome" value={(v) => console.log(v)} />
-			<Input type="text" placeholder="E-mail" value={(v) => console.log(v)} />
-			<Input type="text" placeholder="Telefone" value={(v) => console.log(v)} />
-			<Input type="text" placeholder="Cidade" value={(v) => console.log(v)} />
-			<S.Button>ENVIAR</S.Button>
+			<Input type="text" placeholder="Nome" value={(v) => setNome(v)} />
+			<Input type="text" placeholder="E-mail" value={(v) => setEmail(v)} />
+			<Input type="text" placeholder="Telefone" value={(v) => setTelefone(v)} />
+			<Input type="text" placeholder="Cidade" value={(v) => setCidade(v)} />
+			<S.Button onClick={() => handleSubmit()}>ENVIAR</S.Button>
 		</S.Container>
 	);
 };

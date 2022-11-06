@@ -8,7 +8,7 @@ import Insta from '../../assets/img/icone_instagram.png';
 import Youtube from '../../assets/img/icone_youtube.png';
 import Twi from '../../assets/img/icone_twitter.png';
 import Face from '../../assets/img/icone_facebook.png';
-import Whats from '../../assets/img/icone whatsapp.png';
+import Whats from '../../assets/img/iconeWhats.png';
 import CloseButton from '../../assets/svg/CloseButton.svg';
 
 export const Menu = () => {
