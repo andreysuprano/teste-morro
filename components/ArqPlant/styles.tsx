@@ -22,7 +22,7 @@ export const AbsoluteBackground = styled.div`
 	top: 12%;
 	z-index: +1;
 	width: 100%;
-	height: 78%;
+	height: 600px;
 	background-color: ${(props) => props.theme.secondary};
 	@media (max-width: 767px) {
 		height: 75%;
@@ -35,7 +35,7 @@ export const MapDiv = styled.div`
 	align-items: center;
 	justify-content: center;
 	width: 50%;
-	height: 900px;
+	height: auto;
 	background-color: transparent;
 	z-index: +1;
 
@@ -61,11 +61,13 @@ export const InfoDiv = styled.div`
 `;
 
 export const Map = styled(Image)`
-		width: 100%;
+		width:900px;
         height: auto;
+        margin-bottom: 150px;
         @media (max-width: 767px){
+		width:90%;
         margin-left: 0;
-        margin: 0 auto;
+        margin: 20vh auto;
         }
 `;
 
