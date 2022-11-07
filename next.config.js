@@ -1,7 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,
-	swcMinify: true
+	swcMinify: true,
+	images: {
+		unoptimized: false,
+		loader: 'imgix',
+		path: ''
+	}
+};
+module.exports = {
+	// https://github.com/vercel/next.js/issues/21079
+	// Remove this workaround whenever the issue is fixed
+	images: {
+		loader: 'imgix'
+	}
 };
 
 module.exports = {
