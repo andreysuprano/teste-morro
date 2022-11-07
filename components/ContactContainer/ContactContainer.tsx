@@ -36,6 +36,8 @@ export const ContactContainer = () => {
 		});
 	};
 
+
+
 	return (
 		<S.Container>
 			<S.AbsoluteGradient />
@@ -129,3 +131,7 @@ export const ContactContainer = () => {
 		</S.Container>
 	);
 };
+function v_fun(value: any) {
+	throw new Error('Function not implemented.');
+}
+

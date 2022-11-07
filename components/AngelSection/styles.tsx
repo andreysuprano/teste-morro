@@ -3,19 +3,18 @@ import Image from 'next/image';
 
 export const Container = styled.section`
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 800px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    overflow-x: hidden;
-    margin-top: -10vh;
+    padding-bottom: 10vh;
     @media (max-width: 900px){
         flex-direction: column;
         height: auto;
         margin-top: 0;
-       
     }
 `;
 

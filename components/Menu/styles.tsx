@@ -5,14 +5,11 @@ interface IMenu {
 	isOpen?: boolean;
 }
 
-export const Container =
-	styled.section <
-	IMenu >
-	`
+export const Container = styled.section<IMenu>`
     position: fixed;
     top: 0;
 	width: 100vw;
-	height: ${({ isOpen }) => (isOpen === true ? '100vh' : '0vh')};
+	height: ${({ isOpen }) => (isOpen === true ? '110vh' : '0vh')};
 	background: ${(isOpen) => (isOpen ? 'RGBA(23,25,70,0.95)' : 'transparent')};
     transition: all 200ms linear;
     z-index: 999;
@@ -78,19 +75,21 @@ export const WrapMenuLinks = styled.div`
 	transform: translate(-50%, -50%);
 	top: 55%;
 	left: 60%;
-	@media (max-width: 1200px) {
+	@media (max-width: 1400px) {
 		width: 70%;
-		font-size: 1.7rem;
+		line-height: 35px;
+	}
+	@media (max-width:800px) {
+		width: 70%;
+		line-height: 30px;
 	}
 	@media (max-width: 767px) {
 		width: 90%;
-		font-size: 1.2rem;
 		padding-left: 12vw;
 		padding-right: 2vw;
 	}
 	@media (max-width: 500px) {
 		width: 90%;
-		font-size: 1.2rem;
 		padding-left: 0;
 		padding-right: 10vw;
 	}
@@ -100,6 +99,10 @@ export const PrincipalNav = styled.p`
 	width: 100%;
 	height: auto;
 	opacity: 0.9;
+	font-size: 2rem;
+	@media (max-width: 1300px) {
+		font-size: 1.4rem;
+	}
 	:hover {
 		cursor: pointer;
 		opacity: 1;
@@ -110,6 +113,10 @@ export const PrincipalNavNone = styled.p`
 	width: 100%;
 	height: auto;
 	opacity: 0.9;
+	font-size: 2rem;
+	@media (max-width: 1300px) {
+		font-size: 1.4rem;
+	}
 `;
 
 export const SublNav = styled.p`
@@ -117,6 +124,10 @@ export const SublNav = styled.p`
 	height: auto;
 	opacity: 0.5;
 	padding-left: 100px;
+	font-size: 2rem;
+	@media (max-width: 1300px) {
+		font-size: 1.4rem;
+	}
 	:hover {
 		cursor: pointer;
 		opacity: 1;
@@ -131,6 +142,10 @@ export const Logo = styled(Image)`
     margin-top: 12vh;
     margin-left: 21.5vw;
     transform: scale(1.4);
+	@media (max-width: 1300px) {
+		transform: scale(1);
+
+	}
 `;
 
 export const WrapMidiaIcons = styled.div`
@@ -142,7 +157,7 @@ export const WrapMidiaIcons = styled.div`
 	height: auto;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 90%;
+	top: 86%;
 	left: 50%;
 	gap: 2vw;
 	@media (max-width: 1200px) {
@@ -150,6 +165,7 @@ export const WrapMidiaIcons = styled.div`
 	}
 	@media (max-width: 767px) {
 		left: 48%;
+		top: 85%;
 		gap: 8vw;
 	}
 	@media (max-width: 500px) {
