@@ -19,7 +19,7 @@ export const Container = styled.div`
 	}
 `;
 
-export const Title = styled.span`
+export const TitleNew = styled.h1`
 	color: ${(props) => props.theme.secondary};
 	font-size: 24px;
 	text-align: center;
