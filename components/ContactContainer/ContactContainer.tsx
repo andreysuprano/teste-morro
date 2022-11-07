@@ -6,16 +6,16 @@ import { useState } from 'react';
 import { sendFormSubmit } from '../../utils/sendFormSubmit';
 
 export const ContactContainer = () => {
-	const [ nome, setNome ] = useState('');
-	const [ email, setEmail ] = useState('');
-	const [ telefone, setTelefone ] = useState('');
-	const [ cidade, setCidade ] = useState('');
-	const [ whatsContato, setWhatsContato ] = useState<boolean>(false);
-	const [ telefoneContato, setTelefoneContato ] = useState<boolean>(false);
-	const [ emailContato, setEmailContato ] = useState<boolean>(false);
-	const [ manha, setManha ] = useState<boolean>(false);
-	const [ tarde, setTarde ] = useState<boolean>(false);
-	const [ noite, setNoite ] = useState<boolean>(false);
+	const [nome, setNome] = useState('');
+	const [email, setEmail] = useState('');
+	const [telefone, setTelefone] = useState('');
+	const [cidade, setCidade] = useState('');
+	const [whatsContato, setWhatsContato] = useState<boolean>(false);
+	const [telefoneContato, setTelefoneContato] = useState<boolean>(false);
+	const [emailContato, setEmailContato] = useState<boolean>(false);
+	const [manha, setManha] = useState<boolean>(false);
+	const [tarde, setTarde] = useState<boolean>(false);
+	const [noite, setNoite] = useState<boolean>(false);
 
 	const handleSubmit = () => {
 		sendFormSubmit({
@@ -28,7 +28,7 @@ export const ContactContainer = () => {
 				tarde,
 				noite
 			},
-			optinContato: {
+			optionContato: {
 				emailContato,
 				telefoneContato,
 				whatsContato
