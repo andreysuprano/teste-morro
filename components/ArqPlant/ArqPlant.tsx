@@ -40,7 +40,7 @@ export const ArqPlant = () => {
 							<li>PARQUE AQUÁTICO INDOOR</li>
 							<li>ACADEMIA</li>
 							<li>SAUNAS / SALAS DE MASSAGEM</li>
-							<li>BOULEVARD COM ESPELHOS D'ÀGUA</li>
+							<li>BOULEVARD COM ESPELHOS D&apos;ÀGUA</li>
 							<li>CAPELA</li>
 							<li>PRAIA</li>
 							<li>PISCINA DE BIRIBOL</li>

@@ -23,13 +23,15 @@ type SimpleContactForm = {
 }
 
 const url = 'https://mailer.etools.com.br/api/send';
+const sendTo = 'dev@etools.com.br';
+const sendFrom = 'noreply@etools.com.br';
 
 export const sendFormSubmit = (formData: ContactForm) => {
     const form = {
         email: formData.email,
         client: formData.nome,
-        sendto: 'dev@etools.com.br',
-        sendfrom: 'noreply@etools.com.br',
+        sendto: sendTo,
+        sendfrom: sendFrom,
         subject: 'TENHA SEU PRÓXIMO IMÓVEL NO MORRO DOS ANJOS',
         origin: 'Morro dos Anjos - Contato Completo',
         fields: {
@@ -75,8 +77,8 @@ export const sendSimpleFormSubmit = (formData: SimpleContactForm) => {
     const form = {
         email: formData.email,
         client: formData.nome,
-        sendto: 'dev@etools.com.br',
-        sendfrom: 'noreply@etools.com.br',
+        sendto: sendTo,
+        sendfrom: sendFrom,
         subject: 'QUER SABER MAIS SOBRE O MORRO DOS ANJOS?',
         origin: 'Morro dos Anjos - Contato Simples',
         fields: {
