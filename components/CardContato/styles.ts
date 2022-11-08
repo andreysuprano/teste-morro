@@ -17,9 +17,20 @@ export const Container = styled.div`
 		width: 320px;
 		padding: 30px;
 	}
+	span{
+		color: ${(props) => props.theme.secondary};
+	font-size: 24px;
+	text-align: center;
+	font-weight: 300;
+	margin-bottom: 40px;
+	@media (max-width: 767px) {
+		font-size: 20px;
+		font-weight: 400;
+	}
+	}
 `;
 
-export const TitleNew = styled.h1`
+export const TitleNew = styled.span`
 	color: ${(props) => props.theme.secondary};
 	font-size: 24px;
 	text-align: center;
