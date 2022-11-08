@@ -19,7 +19,7 @@ export const Menu = () => {
 		<S.Container isOpen={isOpen}>
      {!isOpen &&
         <>
-          <S.LineUp/>
+          {/* <S.LineUp/> */}
             <S.WrapFirst onClick={() => setIsOpen(prev => !prev)}>
                 <S.MenuLabel>MENU</S.MenuLabel>
                 <S.WrapLines>
