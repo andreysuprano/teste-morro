@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import * as S from './styles';
 
 interface InputProps {
@@ -7,6 +8,7 @@ interface InputProps {
 }
 
 export const Input = ({ type, placeholder, value }: InputProps) => {
+	const [ value, setValue ] = useState('');
 	const changeValueCallback = (inputValue: any) => {
 		value(inputValue);
 	};
@@ -18,6 +20,7 @@ export const Input = ({ type, placeholder, value }: InputProps) => {
 			onChange={(e) => {
 				changeValueCallback(e.target.value);
 			}}
+			value={}
 		/>
 	);
 };

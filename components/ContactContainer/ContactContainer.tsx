@@ -6,16 +6,16 @@ import { useState } from 'react';
 import { sendFormSubmit } from '../../utils/sendFormSubmit';
 
 export const ContactContainer = () => {
-	const [nome, setNome] = useState('');
-	const [email, setEmail] = useState('');
-	const [telefone, setTelefone] = useState('');
-	const [cidade, setCidade] = useState('');
-	const [whatsContato, setWhatsContato] = useState<boolean>(false);
-	const [telefoneContato, setTelefoneContato] = useState<boolean>(false);
-	const [emailContato, setEmailContato] = useState<boolean>(false);
-	const [manha, setManha] = useState<boolean>(false);
-	const [tarde, setTarde] = useState<boolean>(false);
-	const [noite, setNoite] = useState<boolean>(false);
+	const [ nome, setNome ] = useState('');
+	const [ email, setEmail ] = useState('');
+	const [ telefone, setTelefone ] = useState('');
+	const [ cidade, setCidade ] = useState('');
+	const [ whatsContato, setWhatsContato ] = useState<boolean>(false);
+	const [ telefoneContato, setTelefoneContato ] = useState<boolean>(false);
+	const [ emailContato, setEmailContato ] = useState<boolean>(false);
+	const [ manha, setManha ] = useState<boolean>(false);
+	const [ tarde, setTarde ] = useState<boolean>(false);
+	const [ noite, setNoite ] = useState<boolean>(false);
 
 	const handleSubmit = () => {
 		sendFormSubmit({
@@ -36,7 +36,14 @@ export const ContactContainer = () => {
 		});
 	};
 
+	function formatTelefone(value: string) {
+		const telefone = value.replace(/\D/g, '');
+		return telefone.replace(/(\d{2})(\d{1})(\d{4})(\d{4})/g, '($1)$2 $3-$4');
+	}
 
+	function handleTelefone(telefone: string) {
+		setTelefone(formatTelefone(telefone));
+	}
 
 	return (
 		<S.Container>
@@ -50,10 +57,16 @@ export const ContactContainer = () => {
 					Preencha o formulário abaixo que a gente<br />entra em contato e conta tudo pra você.
 				</S.Sub>
 				<S.WrapInputs>
-					<Input type={'text'} placeholder={'Nome'} value={(value) => setNome(value)} />
-					<Input type={'email'} placeholder={'E-mail'} value={(value) => setEmail(value)} />
-					<Input type={'phone'} placeholder={'Telefone'} value={(value) => setTelefone(value)} />
-					<Input type={'text'} placeholder={'Cidade'} value={(value) => setCidade(value)} />
+					<input type={'text'} placeholder={'Nome'} onChange={(e) => setNome(e.target.value)} />
+					<input type={'email'} placeholder={'E-mail'} onChange={(e) => setEmail(e.target.value)} />
+					<input
+						type={'text'}
+						placeholder={'Telefone'}
+						onChange={(e) => handleTelefone(e.target.value)}
+						value={telefone}
+						maxLength={15}
+					/>
+					<input type={'text'} placeholder={'Cidade'} onChange={(e) => setCidade(e.target.value)} />
 				</S.WrapInputs>
 				<S.WrapChecks>
 					<S.CheckLabel>Como prefere ser contato:</S.CheckLabel>
@@ -134,4 +147,3 @@ export const ContactContainer = () => {
 function v_fun(value: any) {
 	throw new Error('Function not implemented.');
 }
-
