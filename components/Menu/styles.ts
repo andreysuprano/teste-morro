@@ -10,7 +10,7 @@ export const Container = styled.section<IMenu>`
     top: 0;
 	width: 100vw;
 	height: ${({ isOpen }) => (isOpen === true ? '110vh' : '0vh')};
-	background: ${(isOpen) => (isOpen ? 'RGBA(23,25,70,0.95)' : 'transparent')};
+	background: ${(isOpen) => (isOpen ? 'RGBA(23,25,70)' : 'transparent')};
     transition: all 200ms linear;
     z-index: 999;
 `;
