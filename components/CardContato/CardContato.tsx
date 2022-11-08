@@ -20,8 +20,8 @@ export const CardContato = () => {
 
 	return (
 		<S.Container>
-			{/* <S.TitleNew>QUER SABER MAIS SOBRE O MORRO DOS ANJOS?</S.TitleNew> */}
-			<span>QUER SABER MAIS SOBRE O MORRO DOS ANJOS?</span>
+			<S.TitleNew>QUER SABER MAIS SOBRE O MORRO DOS ANJOS?</S.TitleNew>
+		
 			<Input type="text" placeholder="Nome" value={(v) => setNome(v)} />
 			<Input type="text" placeholder="E-mail" value={(v) => setEmail(v)} />
 			<Input type="text" placeholder="Telefone" value={(v) => setTelefone(v)} />
