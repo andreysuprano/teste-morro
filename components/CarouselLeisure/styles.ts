@@ -42,8 +42,9 @@ export const Wrap = styled.div`
 	.carousel .slide .legend {
 		background: transparent;
 		color: #ffff;
+		text-shadow: 1px 1px 2px black;
 		opacity: 1;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		font-weight: 300;
 	}
 	.carousel img {
@@ -72,4 +73,26 @@ export const SubTitle = styled.p`
 	width: 90%;
 	text-align: center;
 	color: ${(props) => props.theme.secondary};
+`;
+
+export const BtnLeftMobile = styled.button`
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100vw;
+background-color: transparent;
+z-index: 888;
+border: none;
+`;
+
+export const BtnRightMobile = styled.button`
+position: absolute;
+top: 0;
+right: 0;
+width: 50%;
+height: 100vw;
+background-color: transparent;
+z-index: 888;
+border: none;
 `;
