@@ -4,17 +4,28 @@ import { Carousel } from 'react-responsive-carousel';
 import { Button } from '../CardContato/styles';
 import { isMobile } from 'react-device-detect';
 
-import FirstImage from '../../assets/img/FE.png';
-import SecondImage from '../../assets/img/DIVERSAO.png';
-import ThirdImage from '../../assets/img/PRAIA.png';
-import FourthImage from '../../assets/img/GASTRONOMIA.png';
-import FifthImage from '../../assets/img/CORPO E ALMA.png';
-import SixthImage from '../../assets/img/ESPORTIVO.png';
-import SeventhImage from '../../assets/img/AQUATICO.png';
-import {ContainerMobile,ComponentBackgroundMobileFirst,WrapCircles,Circle1,Circle2,Circle3,Circle4,Circle5,Circle6,Circle7} from '../PicturesSection/styles';
-import { useState } from 'react';
+import FirstImage from '../../assets/img/Leisure/complexo_aquatico_1.jpg';
+import SecondImage from '../../assets/img/Leisure/lazy_river.jpg';
+import ThirdImage from '../../assets/img/Leisure/bar_molhado.jpg';
+import FourthImage from '../../assets/img/Leisure/piscina_coberta.jpg';
+import FifthImage from '../../assets/img/Leisure/aquaplay-infantil.jpg';
+import SixthImage from '../../assets/img/Leisure/piscina_surfe.jpg';
+
+
+import {ContainerMobile,ComponentBackgroundMobileFirst,WrapCircles,Circle1,Circle2,Circle3,Circle4,Circle5,Circle6} from '../PicturesSection/styles';
+import { useEffect, useState } from 'react';
+
 export const CarouselLeisure = () => {
-	const [pic, setPic] = useState(1);
+	const [pic, setPic] = useState(0);
+
+    const images = [FirstImage,SecondImage,ThirdImage,FourthImage,FifthImage,SixthImage]
+	let nois:any = undefined;
+    useEffect(() => {
+        nois = setTimeout(() => {
+                setPic(oldState => oldState === 5 ? 0 : oldState + 1);
+            }, 5000);
+    }, [pic]);
+	
 	return (
 		<>
 		<S.Container>
@@ -41,50 +52,49 @@ export const CarouselLeisure = () => {
 					emulateTouch={true}
 				>
 					<div>
-						<img src="./assets/img/leisure.png" />
+						<img src="./assets/img/Leisure/complexo_aquatico_1.jpg" />
 						<p className="legend">Complexo aquático</p>
 					</div>
 					<div>
-						<img src="./assets/img/family.png" />
+						<img src="./assets/img/Leisure/lazy_river.jpg" />
 						<p className="legend">Lazy river</p>
 					</div>
 					<div>
-						<img src="./assets/img/invest.png" />
+						<img src="./assets/img/Leisure/bar_molhado.jpg" />
 						<p className="legend">Bar molhado</p>
 					</div>
 					<div>
-						<img src="./assets/img/leisure.png" />
+						<img src="./assets/img/Leisure/piscina_coberta.jpg" />
 						<p className="legend">Piscina coberta</p>
 					</div>
 					<div>
-						<img src="./assets/img/family.png" />
+						<img src="./assets/img/Leisure/aquaplay-infantil.jpg" />
 						<p className="legend">Aquaplay infantil</p>
 					</div>
 					<div>
-						<img src="./assets/img/invest.png" />
+						<img src="./assets/img/Leisure/piscina_surfe.jpg" />
 						<p className="legend">Piscina de surfe</p>
 					</div>
 				</Carousel>
 			</S.Wrap>
 		</S.Container>
 		{isMobile && <br></br>}
-		
 		       <ContainerMobile>
-			   {pic === 1 && <ComponentBackgroundMobileFirst src={FirstImage} alt="Background Image" />}
-			   {pic === 2 && <ComponentBackgroundMobileFirst src={SecondImage} alt="Background Image" />}
-			   {pic === 3 && <ComponentBackgroundMobileFirst src={ThirdImage} alt="Background Image" />}
-			   {pic === 4 && <ComponentBackgroundMobileFirst src={FourthImage} alt="Background Image" />}
-			   {pic === 5 && <ComponentBackgroundMobileFirst src={FifthImage} alt="Background Image" />}
-			   {pic === 6 && <ComponentBackgroundMobileFirst src={SixthImage} alt="Background Image" />}
-			   {pic === 7 && <ComponentBackgroundMobileFirst src={SeventhImage} alt="Background Image" />}
+			   <S.BtnRightMobile onClick={() => {clearTimeout(nois);setPic(oldState => oldState + 1)}}/>
+                <S.BtnLeftMobile onClick={() => {clearTimeout(nois);setPic(oldState => oldState - 1)}}/>
+			   {pic === 0 && <ComponentBackgroundMobileFirst src={FirstImage} alt="Background Image" />}
+			   {pic === 1 && <ComponentBackgroundMobileFirst src={SecondImage} alt="Background Image" />}
+			   {pic === 2 && <ComponentBackgroundMobileFirst src={ThirdImage} alt="Background Image" />}
+			   {pic === 3 && <ComponentBackgroundMobileFirst src={FourthImage} alt="Background Image" />}
+			   {pic === 4 && <ComponentBackgroundMobileFirst src={FifthImage} alt="Background Image" />}
+			   {pic === 5 && <ComponentBackgroundMobileFirst src={SixthImage} alt="Background Image" />}
 		  <WrapCircles>
-			   <Circle1 onClick={() => setPic(1)} pic={pic}/>
-			   <Circle2 onClick={() => setPic(2)} pic={pic}/>
-			   <Circle3 onClick={() => setPic(3)} pic={pic}/>
-			   <Circle4 onClick={() => setPic(4)} pic={pic}/>
-			   <Circle5 onClick={() => setPic(5)} pic={pic}/>
-			   <Circle6 onClick={() => setPic(6)} pic={pic}/>
-			   <Circle7 onClick={() => setPic(7)} pic={pic}/>
+			   <Circle1 onClick={() => {clearTimeout(nois);setPic(0)}} pic={pic}/>
+			   <Circle2 onClick={() => {clearTimeout(nois);setPic(1)}} pic={pic}/>
+			   <Circle3 onClick={() => {clearTimeout(nois);setPic(2)}} pic={pic}/>
+			   <Circle4 onClick={() => {clearTimeout(nois);setPic(3)}} pic={pic}/>
+			   <Circle5 onClick={() => {clearTimeout(nois);setPic(4)}} pic={pic}/>
+			   <Circle6 onClick={() => {clearTimeout(nois);setPic(5)}} pic={pic}/>
 		  </WrapCircles>
 		   </ContainerMobile>
 		   </>
