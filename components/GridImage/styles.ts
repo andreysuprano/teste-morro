@@ -9,19 +9,27 @@ interface ButtonProps {
     position:boolean;
 }
 
+interface ImgageDiv{
+    src:string;
+}
+
 export const Container = styled.section<ComponentInverse>`
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
     flex-direction: ${props => props.inverse ? 'row-reverse':'row'};
     margin: 100px 0px;
+    @media (max-width: 767px) {
+        gap: 20px;
+        flex-wrap: wrap;
+	}
 `;
 
 export const TextWrap = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 450px;
+    padding: 15px;
 `;
 
 export const ListItem = styled.li<ComponentInverse>`
@@ -37,6 +45,8 @@ export const GridContainer = styled.div`
     gap: 25px;
     @media (max-width: 767px) {
         overflow-x: hidden;
+        padding: 20px;
+        gap: 15px;
 	}
 `;
 
@@ -49,18 +59,20 @@ export const ThumbContainer = styled.div<ComponentInverse>`
         justify-content: center;
         align-items: center;
         overflow-x: hidden;
+        gap: 15px;
 	}
 `;
 
 export const Image = styled.img`
-   @media (max-width: 767px) {
-	}
+    width: 100%;
 `;
 
 export const PrincipalImage = styled.img`
-    @media (max-width: 767px) {
+    width: 100%;
+`;
 
-	}
+export const ImageWrapper = styled.div`
+    display: flex;
 `;
 
 export const Title = styled.span<ComponentInverse>`
@@ -71,8 +83,9 @@ export const Title = styled.span<ComponentInverse>`
     display: flex;
     text-align: ${props => props.inverse ? 'left':'right'};
     @media (max-width: 767px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
+        margin-bottom: 35px;
 	}
 `;
 
@@ -88,6 +101,7 @@ export const Paragraph = styled.p<ComponentInverse>`
     text-align: ${props => props.inverse ? 'left':'right'};
     @media (max-width: 767px) {
         text-align: center;
+        padding: 0px 15px;
 	}
 `;
 
@@ -101,7 +115,7 @@ export const Button = styled(BaseButton)<ButtonProps>`
 export const ButtonMobileWrapper = styled.div`
 	display:none;
     width: 100vw;
-    margin-top: -20px;
+    margin-top: -50px;
     @media (max-width: 767px) {
 		display:flex;
         align-items: center;
@@ -112,10 +126,16 @@ export const ButtonMobileWrapper = styled.div`
 
 export const ButtonMobile = styled(BaseButton)<ButtonProps>`
 	display:none;
-    width: 80%;
+    width: 90%;
     @media (max-width: 767px) {
 		display:flex;
         align-items: center;
         justify-content: center;
+	}
+`;
+
+export const List = styled.div`
+    @media (max-width: 767px) {
+        padding: 0px 20px;
 	}
 `;
