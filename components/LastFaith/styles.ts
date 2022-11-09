@@ -8,11 +8,12 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     margin-top: -10vh;
+    margin-bottom: 10vh;
     @media (max-width: 1400px){
-       margin-bottom: 20vh;
+       margin-bottom: 35vh;
     }
     @media (max-width: 1200px){
-       margin-bottom: 10vh;
+       margin-bottom: 20vh;
     }
     @media (max-width: 900px){
         flex-direction: column;

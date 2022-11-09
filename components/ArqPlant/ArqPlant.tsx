@@ -32,7 +32,7 @@ export const ArqPlant = () => {
 							<li>LOJA DE CONVENIÊNCIA / EMPÓRIO</li>
 							<li>RECEPÇÃO / LOBBY</li>
 							<li>PORTE-COCHÈRE</li>
-							<li>PIZZARIA / HANBURGUERIA / MICROCERVEJARIA</li>
+							<li>PIZZARIA / HAMBURGUERIA / MICROCERVEJARIA</li>
 						</ol>
 					</S.Left>
 					<S.Right>
