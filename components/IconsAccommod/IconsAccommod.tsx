@@ -23,14 +23,14 @@ export const IconsAccommod = () => {
         <S.WrapItems>
             <Image src={Area} alt="" />
                 <S.WrapTexts>
-                    <h5>Àrea Privativa:<br/>60 ou 90 m²</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <h5>Área Privativa:<br/>60 ou 90 m²</h5>
+                    <p>Os chalés de 60m² poderão acomodar até 6 pessoas; e as casas vila de 90m² até 10 pessoas.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>
             <Image src={Wifi} alt="" />
                 <S.WrapTexts>
-                    <h5>Internet / wi-Fi<br/>de alta velocidade</h5>
+                    <h5>Internet / wi-fi<br/>de alta velocidade</h5>
                     <p>Todos os chalés contam com wi-fi de alta velocidade.</p>
                 </S.WrapTexts>
         </S.WrapItems>
@@ -66,7 +66,7 @@ export const IconsAccommod = () => {
             <Image src={Varanda} alt="" />
                 <S.WrapTexts>
                 <h5>Sala com varanda</h5>
-                    <p>Os chalés de 60m² poderão acomodar até 6 pessoasç e as casas vila de 90m² até 10 pessoas.</p>
+                    <p>Os chalés possuem uma vista linda da varanda.</p>
                 </S.WrapTexts>
         </S.WrapItems>
         <S.WrapItems>

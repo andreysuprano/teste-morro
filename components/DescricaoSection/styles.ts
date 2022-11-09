@@ -30,7 +30,7 @@ export const Title = styled.span`
 	font-size: 48px;
 	display: flex;
 	text-align: center;
-	font-weight: 100;
+	font-weight: 200;
 	line-height: 50px;
 	@media (max-width: 767px) {
 		font-size: 36px;
@@ -46,9 +46,12 @@ export const Paragraph = styled.p`
 	text-align: center;
 	max-width: 1200px;
 	font-weight: 200;
+	margin-top: -10vh;
 	@media (max-width: 767px) {
 		display: none;
 		padding: 0px 50px;
+	margin-top: 0;
+
 	}
 `;
 
@@ -60,7 +63,7 @@ export const ParagraphMobile = styled(Paragraph)`
 `;
 
 export const ButtonConsultor = styled(Button)`
-	margin-top: 70px;
+	margin-top: -270px;
 	margin-bottom: 30px;
 	display: none;
 	@media (max-width: 767px) {

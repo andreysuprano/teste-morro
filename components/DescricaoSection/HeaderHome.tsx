@@ -18,13 +18,14 @@ export const DescricaoSection = () => {
 				Viver uma experiência única em um fantástico hotel resort e conquistar tudo que você deseja para passar
 				dias incríveis. Bem-vindo ao Morro dos Anjos, um mundo de águas quentes e lazer para você sua família.
 			</S.ParagraphMobile>
+			<br></br>
 			<a
 				href="https://api.whatsapp.com/send?phone=554398446070&text=Ol%C3%A1%20vim%20do%20site%2C%20gostaria%20de%20falar%20com%20um%20consultor!"
 				target="_blank"
 				rel="noreferrer"
 				style={{ textDecoration: 'none', color: 'inherit' }}
 			>
-				<S.ButtonConsultor>QUERO FALAR COM UM CONSULTOR</S.ButtonConsultor>
+				<Button>QUERO FALAR COM UM CONSULTOR</Button>
 			</a>
 		</S.Container>
 	);

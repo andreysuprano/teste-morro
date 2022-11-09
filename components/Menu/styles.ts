@@ -13,6 +13,7 @@ export const Container = styled.section<IMenu>`
 	background: ${(isOpen) => (isOpen ? 'RGBA(23,25,70)' : 'transparent')};
     transition: all 200ms linear;
     z-index: 999;
+	box-shadow: rgb(0, 0, 0, 0.4) 0px 20px 150px 80px;
 `;
 
 export const LineUp = styled.hr`

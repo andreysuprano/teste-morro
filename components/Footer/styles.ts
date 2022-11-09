@@ -39,7 +39,7 @@ export const Footer = styled.footer`
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
-		gap: 4vw;
+		gap: 2vw;
     @media (max-width: 900px) {
 		display: flex;
 		flex-direction: column;
@@ -52,6 +52,7 @@ export const Footer = styled.footer`
 `;
 
 export const LogoDesktop = styled(Image)`
+		transform: scale(0.9);
      @media (max-width: 767px) {
 		display: none;
     }

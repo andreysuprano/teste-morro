@@ -23,7 +23,7 @@ export default function Invest() {
 			<GridImage 
 				hilight="UMA GRANDE OPORTUNIDADE: "
 				title="UM CLUBE EXCLUSIVO PARA VOCÊ UTILIZAR QUANDO QUISER."
-				paragraph="Hoje, o público só encontra uma rede hoteleira composta praticamente por um só perfil, os chamados hotéis de passagem, o que torna oMorro dos Anjos um lugar sem similar nem concorrente."
+				paragraph="Hoje, o público só encontra uma rede hoteleira composta praticamente por um só perfil, os chamados hotéis de passagem, o que torna o Morro dos Anjos um lugar sem similar nem concorrente."
 				pic1="./assets/img/Servico.png" 
 				buttonPosition="pic" 
 				principalPic="./assets/img/Vista.png"

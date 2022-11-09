@@ -56,7 +56,7 @@ export default function Leisure() {
 
 			<GridImage
 				title="DIVERSÃO SEMPRE GARANTIDA."
-				paragraph="Faça chuva ou faça sol, O Morro dos Anjos oferece diferentes espaços de entretenimento para você relaxar e curtir com a família."
+				paragraph="Faça chuva ou faça sol, o Morro dos Anjos oferece diferentes espaços de entretenimento para você relaxar e curtir com a família."
 				principalPic="./assets/img/Leisure/Principal4.png"
 				pic1="./assets/img/Leisure/3-1.png"
 				pic2="./assets/img/Leisure/3-2.png"

@@ -36,7 +36,7 @@ export const ArqPlant = () => {
 						</ol>
 					</S.Left>
 					<S.Right>
-						<ol>
+						<ol start={19}>
 							<li>PARQUE AQUÁTICO INDOOR</li>
 							<li>ACADEMIA</li>
 							<li>SAUNAS / SALAS DE MASSAGEM</li>
