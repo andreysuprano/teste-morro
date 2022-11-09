@@ -8,6 +8,12 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     margin-top: -10vh;
+    @media (max-width: 1400px){
+       margin-bottom: 20vh;
+    }
+    @media (max-width: 1200px){
+       margin-bottom: 10vh;
+    }
     @media (max-width: 900px){
         flex-direction: column;
         margin-top: 0;
@@ -130,7 +136,6 @@ background-color: #fff;
         bottom: -410px;
         left: 150px;
         background-color: transparent;
-
         }
    .imgclass2{
         width: 200px;

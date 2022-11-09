@@ -69,7 +69,7 @@ export const ContactContainer = () => {
 					<input type={'text'} placeholder={'Cidade'} onChange={(e) => setCidade(e.target.value)} />
 				</S.WrapInputs>
 				<S.WrapChecks>
-					<S.CheckLabel>Como prefere ser contato:</S.CheckLabel>
+					<S.CheckLabel>Como prefere ser contatato?</S.CheckLabel>
 					<S.WrapInputsChoice>
 						<S.WrapEach>
 							<input

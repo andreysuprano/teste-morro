@@ -22,7 +22,7 @@ export const AbsoluteBackground = styled.div`
 	top: 12%;
 	z-index: +1;
 	width: 100%;
-	height: 600px;
+	height: 80%;
 	background-color: ${(props) => props.theme.secondary};
 	@media (max-width: 767px) {
 		height: 75%;
@@ -107,6 +107,7 @@ export const Left = styled.div`
 	font-weight: 200;
 	@media (max-width: 767px) {
 		width: 45%;
+		margin-left: 6vw;
 	}
 `;
 

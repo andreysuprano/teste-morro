@@ -84,11 +84,11 @@ export const FirstDiv = styled.div<IWords>`
 	position: absolute;
 	top: 100px;
 	left: 100px;
-	background-color:${({pic}) => pic === 1 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
+	background-color:${({pic}) => pic === 0 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
 	width: 10vw;
 	height: 20vh;
-	font-size: ${({pic}) => pic === 1 ? "10px" : "12px"};
-	line-height: ${({pic}) => pic === 1 ? "15px" : "20px"};
+	font-size: ${({pic}) => pic === 0 ? "14px" : "16px"};
+	line-height: ${({pic}) => pic === 0 ? "20px" : "25px"};
 	padding: 15px;
 	border-radius: 20px;
 	display: flex;
@@ -101,7 +101,7 @@ export const FirstDiv = styled.div<IWords>`
 		background-color:RGBA(25,170,233) ;
 	}
 	h1{
-		font-weight: ${({pic}) => pic === 1 ? "600" : "200"};
+		font-weight: ${({pic}) => pic === 0 ? "600" : "200"};
 		color: ${(props) => props.theme.white};
 	}
 	@media (max-width: 1350px){
@@ -123,11 +123,11 @@ export const SecondDiv = styled.div<IWords>`
 	position: absolute;
 	top: 320px;
 	left: 320px;
-	background-color:${({pic}) => pic === 2 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
+	background-color:${({pic}) => pic === 1 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
 	width: 10vw;
 	height: 20vh;
-	font-size: ${({pic}) => pic === 2 ? "10px" : "12px"};
-	line-height: ${({pic}) => pic === 2 ? "15px" : "20px"};
+	font-size: ${({pic}) => pic === 1 ? "14px" : "16px"};
+	line-height: ${({pic}) => pic === 1 ? "20px" : "25px"};
 	padding: 15px;
 	border-radius: 20px;
 	display: flex;
@@ -140,7 +140,7 @@ export const SecondDiv = styled.div<IWords>`
 		transition: all 200ms linear;
 	}
 	h1{
-		font-weight: ${({pic}) => pic === 2 ? "600" : "200"};
+		font-weight: ${({pic}) => pic === 1 ? "600" : "200"};
 		color: ${(props) => props.theme.white};
 	}
 	@media (max-width: 1350px){
@@ -162,11 +162,11 @@ export const ThirdDiv = styled.div<IWords>`
 	position: absolute;
 	top: 540px;
 	left: 100px;
-	background-color:${({pic}) => pic === 3 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
+	background-color:${({pic}) => pic === 2 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
 	width: 10vw;
 	height: 20vh;
-	font-size: ${({pic}) => pic === 3 ? "10px" : "12px"};
-	line-height: ${({pic}) => pic === 3 ? "15px" : "20px"};
+	font-size: ${({pic}) => pic === 2 ? "14px" : "16px"};
+	line-height: ${({pic}) => pic === 2 ? "20px" : "25px"};
 	padding: 15px;
 	border-radius: 20px;
 	display: flex;
@@ -179,7 +179,7 @@ export const ThirdDiv = styled.div<IWords>`
 		transition: all 200ms linear;
 	}
 	h1{
-		font-weight: ${({pic}) => pic === 3 ? "600" : "200"};
+		font-weight: ${({pic}) => pic === 2 ? "600" : "200"};
 		color: ${(props) => props.theme.white};
 	}
 	@media (max-width: 1350px){
@@ -201,11 +201,11 @@ export const FourthDiv = styled.div<IWords>`
 	position: absolute;
 	top: 100px;
 	right: 100px;
-	background-color:${({pic}) => pic === 4 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
+	background-color:${({pic}) => pic === 3 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
 	width: 10vw;
 	height: 20vh;
-	font-size: ${({pic}) => pic === 4 ? "10px" : "12px"};
-	line-height: ${({pic}) => pic === 4 ? "15px" : "20px"};
+	font-size: ${({pic}) => pic === 3 ? "14px" : "16px"};
+	line-height: ${({pic}) => pic === 3 ? "20px" : "25px"};
 	padding: 15px;
 	border-radius: 20px;
 	display: flex;
@@ -218,7 +218,7 @@ export const FourthDiv = styled.div<IWords>`
 		transition: all 200ms linear;
 	}
 	h1{
-		font-weight: ${({pic}) => pic === 4 ? "600" : "200"};
+		font-weight: ${({pic}) => pic === 3 ? "600" : "200"};
 		color: ${(props) => props.theme.white};
 		}
 	@media (max-width: 1350px){
@@ -240,11 +240,11 @@ export const FifthDiv = styled.div<IWords>`
 	position: absolute;
 	top: 320px;
 	right: 320px;
-	background-color:${({pic}) => pic === 5 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
+	background-color:${({pic}) => pic === 4 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
 	width: 10vw;
 	height: 20vh;
-	font-size: ${({pic}) => pic === 5 ? "10px" : "12px"};
-	line-height: ${({pic}) => pic === 5 ? "15px" : "20px"};
+	font-size: ${({pic}) => pic === 4 ? "14px" : "16px"};
+	line-height: ${({pic}) => pic === 4 ? "20px" : "25px"};
 	padding: 15px;
 	border-radius: 20px;
 	display: flex;
@@ -257,7 +257,7 @@ export const FifthDiv = styled.div<IWords>`
 		transition: all 200ms linear;
 	}
 	h1{
-		font-weight: ${({pic}) => pic === 5 ? "600" : "200"};
+		font-weight: ${({pic}) => pic === 4 ? "600" : "200"};
 		color: ${(props) => props.theme.white};
 	}
 	@media (max-width: 1350px){
@@ -279,11 +279,11 @@ export const SixthDiv = styled.div<IWords>`
 	position: absolute;
 	top: 540px;
 	right: 540px;
-	background-color:${({pic}) => pic === 6 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
+	background-color:${({pic}) => pic === 5 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
 	width: 10vw;
 	height: 20vh;
-	font-size: ${({pic}) => pic === 6 ? "10px" : "12px"};
-	line-height: ${({pic}) => pic === 6 ? "15px" : "20px"};
+	font-size: ${({pic}) => pic === 5 ? "14px" : "16px"};
+	line-height: ${({pic}) => pic === 5 ? "20px" : "25px"};
 	padding: 15px;
 	border-radius: 20px;
 	display: flex;
@@ -296,7 +296,7 @@ export const SixthDiv = styled.div<IWords>`
 		transition: all 200ms linear;
 	}
 	h1{
-		font-weight: ${({pic}) => pic === 6 ? "600" : "200"};
+		font-weight: ${({pic}) => pic === 5 ? "600" : "200"};
 		color: ${(props) => props.theme.white};
 	}
 	@media (max-width: 1350px){
@@ -318,11 +318,11 @@ export const SeventhDiv = styled.div<IWords>`
 	position: absolute;
 	top: 540px;
 	right: 100px;
-	background-color:${({pic}) => pic === 7 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
+	background-color:${({pic}) => pic === 6 ? "RGBA(25,170,233)" : "RGBA(25,170,233,0.7)"} ;
 	width: 10vw;
 	height: 20vh;
-	font-size: ${({pic}) => pic === 7 ? "10px" : "12px"};
-	line-height: ${({pic}) => pic === 7 ? "15px" : "20px"};
+	font-size: ${({pic}) => pic === 6 ? "14px" : "16px"};
+	line-height: ${({pic}) => pic === 6 ? "20px" : "25px"};
 	padding: 15px;
 	border-radius: 20px;
 	display: flex;
@@ -335,7 +335,7 @@ export const SeventhDiv = styled.div<IWords>`
 		transition: all 200ms linear;
 	}
 	h1{
-		font-weight: ${({pic}) => pic === 7 ? "600" : "200"};
+		font-weight: ${({pic}) => pic === 6 ? "600" : "200"};
 		color: ${(props) => props.theme.white};
 	}
 	@media (max-width: 1350px){
@@ -366,15 +366,33 @@ export const ContainerMobile = styled.section`
 		position: relative;
 		margin-top: 2vh;
 		margin-bottom: 2vh;
-
+		position: relative;
 	}
 	@media (min-width: 768px) {
 		display: none;
 	}
 `;
+export const BtnLeftMobile = styled.button`
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 100vw;
+background-color: transparent;
+z-index: 888;
+border: none;
+`;
 
-
-
+export const BtnRightMobile = styled.button`
+position: absolute;
+top: 0;
+right: 0;
+width: 50%;
+height: 100vw;
+background-color: transparent;
+z-index: 888;
+border: none;
+`;
 
 export const ComponentBackgroundMobileFirst = styled(Image)`
 	@media (max-width: 767px) {
@@ -415,6 +433,8 @@ export const WrapCircles = styled.div`
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		z-index: 888;
+
 	}
 	@media (min-width: 768px) {
 		display: none;
@@ -426,7 +446,7 @@ export const Circle1 = styled.div<IWords>`
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color:${({pic}) => pic === 1 ? "RGBA(25,170,233)" : "#ffff"} ;
+	background-color:${({pic}) => pic === 0 ? "RGBA(25,170,233)" : "#ffff"} ;
 
 	border: 2px solid #171946;
 	}
@@ -440,7 +460,7 @@ export const Circle2 = styled.div<IWords>`
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color:${({pic}) => pic === 2 ? "RGBA(25,170,233)" : "#ffff"} ;
+	background-color:${({pic}) => pic === 1 ? "RGBA(25,170,233)" : "#ffff"} ;
 
 	border: 2px solid #171946;
 	}
@@ -454,7 +474,7 @@ export const Circle3 = styled.div<IWords>`
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color:${({pic}) => pic === 3 ? "RGBA(25,170,233)" : "#ffff"} ;
+	background-color:${({pic}) => pic === 2 ? "RGBA(25,170,233)" : "#ffff"} ;
 
 	border: 2px solid #171946;
 	}
@@ -468,7 +488,7 @@ export const Circle4 = styled.div<IWords>`
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color:${({pic}) => pic === 4 ? "RGBA(25,170,233)" : "#ffff"} ;
+	background-color:${({pic}) => pic === 3 ? "RGBA(25,170,233)" : "#ffff"} ;
 
 	border: 2px solid #171946;
 	}
@@ -482,7 +502,7 @@ export const Circle5 = styled.div<IWords>`
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color:${({pic}) => pic === 5 ? "RGBA(25,170,233)" : "#ffff"} ;
+	background-color:${({pic}) => pic === 4 ? "RGBA(25,170,233)" : "#ffff"} ;
 
 	border: 2px solid #171946;
 	}
@@ -496,7 +516,7 @@ export const Circle6 = styled.div<IWords>`
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color:${({pic}) => pic === 6 ? "RGBA(25,170,233)" : "#ffff"} ;
+	background-color:${({pic}) => pic === 5 ? "RGBA(25,170,233)" : "#ffff"} ;
 
 	border: 2px solid #171946;
 	}
@@ -510,7 +530,7 @@ export const Circle7 = styled.div<IWords>`
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color:${({pic}) => pic === 7 ? "RGBA(25,170,233)" : "#ffff"} ;
+	background-color:${({pic}) => pic === 6 ? "RGBA(25,170,233)" : "#ffff"} ;
 	border: 2px solid #171946;
 	}
 	@media (min-width: 768px) {

@@ -23,7 +23,7 @@ export const CarouselLeisure = () => {
 			</S.Title>
 			<S.SubTitle>
 				O Morro dos Anjos tem um parque de águas completo, perfeito pra se divertir, surfar ou<br />
-				relaxar. São piscinas incríceis de águas quentes termais para todas as idades, disponíveis<br />
+				relaxar. São piscinas incríveis de águas quentes termais para todas as idades, disponíveis<br />
 				para você e sua família aproveitarem em qualquer estação do ano.
 			</S.SubTitle>
 			<Button>
@@ -42,7 +42,7 @@ export const CarouselLeisure = () => {
 				>
 					<div>
 						<img src="./assets/img/leisure.png" />
-						<p className="legend">Complexo aquatico</p>
+						<p className="legend">Complexo aquático</p>
 					</div>
 					<div>
 						<img src="./assets/img/family.png" />
@@ -54,15 +54,15 @@ export const CarouselLeisure = () => {
 					</div>
 					<div>
 						<img src="./assets/img/leisure.png" />
-						<p className="legend">Complexo aquatico</p>
+						<p className="legend">Piscina coberta</p>
 					</div>
 					<div>
 						<img src="./assets/img/family.png" />
-						<p className="legend">Lazy river</p>
+						<p className="legend">Aquaplay infantil</p>
 					</div>
 					<div>
 						<img src="./assets/img/invest.png" />
-						<p className="legend">Bar molhado</p>
+						<p className="legend">Piscina de surfe</p>
 					</div>
 				</Carousel>
 			</S.Wrap>

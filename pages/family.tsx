@@ -23,7 +23,7 @@ export default function Family() {
 			/>
 			<GridImage 
 				title="UM CLUBE EXCLUSIVO PARA VOCÊ UTILIZAR QUANDO QUISER."
-				paragraph="A estrutura do resort fica disponível para utilização diária mesmo se você̂̂ não estiver hospedado no Morro dos Anjos ou se sua unidade estiver alugada. Quem possui cotas do empreendimento pode utilizar piscinas, quadras, restaurantes e serviços como um clube. Para as crianças são as férias perfeitas, à disposição da família o ano inteiro. "
+				paragraph="A estrutura do resort fica disponível para utilização diária mesmo se você não estiver hospedado no Morro dos Anjos ou se sua unidade estiver alugada. Quem possui cotas do empreendimento pode utilizar piscinas, quadras, restaurantes e serviços como um clube. Para as crianças são as férias perfeitas, à disposição da família o ano inteiro. "
 				pic1="./assets/img/Familia/2-1.png" 
 				pic2="./assets/img/Familia/2-2.png" 
 				buttonPosition="text" 
@@ -34,7 +34,7 @@ export default function Family() {
 			/>
 			<GridImage 
 				title="IMAGINE TER SUA SEGUNDA CASA AQUI."
-				paragraph="O Morro dos Anjos é o lugar perfeito para você̂ ter sua segunda casa e viver ótimos momentos em família. Aqui, você escolhe quantos cotas quer ter do seu imóvel, usando seu bem pelo tempo proporcional ao quanto pagou. E pode aproveitar toda a estrutura de lazer e serviços sem se preocupar com manutenção, imprevistos ou reformas. E mais: todos os imóveis têm escritura pública e matrícula, se tornando patrimônio familiar para as futuras gerações."
+				paragraph="O Morro dos Anjos é o lugar perfeito para você ter sua segunda casa e viver ótimos momentos em família. Aqui, você escolhe quantas cotas quer ter do seu imóvel, usando seu bem pelo tempo proporcional ao quanto pagou. E pode aproveitar toda a estrutura de lazer e serviços sem se preocupar com manutenção, imprevistos ou reformas. E mais: todos os imóveis têm escritura pública e matrícula, se tornando patrimônio familiar para as futuras gerações."
 				pic1="./assets/img/Familia/3-1.png" 
 				pic2="./assets/img/Familia/3-2.png" 
 				buttonPosition="pic" 

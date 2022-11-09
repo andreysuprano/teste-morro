@@ -32,6 +32,7 @@ export const BeneficiosContainer = styled.div`
     margin-top: 50px;
     margin-bottom: 50px;
     flex-wrap: wrap;
+    gap: 1vw;
 `;
 
 export const BeneficioWrapper = styled.div`
@@ -40,6 +41,7 @@ export const BeneficioWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 20vh;
     @media (max-width: 767px) {
 		padding: 25px 15px 25px 15px;
 	}
@@ -52,6 +54,7 @@ export const Paragraph = styled.p`
     margin-top: 20px;
     text-align: center;
     max-width: 150px;
+    min-height: 10vh;
     @media (max-width: 767px) {
 		font-size:18px;
         max-width: 150px;

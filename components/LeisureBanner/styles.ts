@@ -21,7 +21,7 @@ export const WrapTitle = styled.div`
 	flex-wrap: wrap;
 	width: 90%;
 	height: auto;
-	margin-top: -30vh;
+	margin-top: -40vh;
 	h1 {
 		font-weight: 300;
 		color: ${(props) => props.theme.secondary};
